@@ -7,8 +7,7 @@ import {
 	Target,
 	Users,
 } from 'lucide-react';
-import Link from 'next/link';
-import { Button } from '../ui/button';
+import { ContactButton } from '../common/contact-button';
 
 export function Features() {
 	return (
@@ -110,17 +109,7 @@ export function Features() {
 				</div>
 
 				<div className="mt-12 text-center">
-					<Button
-						asChild
-						variant="default"
-						size="lg"
-						className="group rounded bg-button-background"
-					>
-						<Link href="/services">
-							Learn more about
-							<ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-						</Link>
-					</Button>
+					<ContactButton buttonText="Learn more about" icon={<ArrowRight />} />
 				</div>
 			</div>
 		</section>

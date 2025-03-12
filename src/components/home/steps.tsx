@@ -1,7 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '../ui/button';
+import { ContactButton } from '../common/contact-button';
 
 interface Step {
 	number: string;
@@ -99,17 +98,7 @@ export default function Steps() {
 				</div>
 
 				<div className="mt-16 text-center">
-					<Button
-						asChild
-						variant="default"
-						size="lg"
-						className="group rounded bg-button-background"
-					>
-						<Link href="/services">
-							Let&apos;s Get Started
-							<ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-						</Link>
-					</Button>
+					<ContactButton buttonText="Let's Get Started" icon={<ArrowRight />} />
 				</div>
 			</div>
 		</section>

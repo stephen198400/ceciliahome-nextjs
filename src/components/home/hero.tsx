@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '../ui/button';
+import { ContactButton } from '../common/contact-button';
 
 // 获取图片资源
 const heroImage =
@@ -24,21 +23,14 @@ export function Hero() {
 							structural engineering services. We handle permits, plans, and
 							design while you watch your vision become reality.
 						</p>
-						<div className="mt-6">
-							<Link href="/contact">
-								<Button
-									className="px-6 rounded py-6 	bg-button-background  font-medium"
-									size="lg"
-								>
-									Get A Free Consultation
-								</Button>
-							</Link>
+						<div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4">
+							<ContactButton buttonText="Get A Free Consultation" />
 						</div>
 					</div>
 
 					{/* Right Image */}
 					<div className="w-full md:w-1/2 flex items-center justify-center">
-						<div className="relative w-full h-0 pb-[75%] overflow-hidden rounded-xl">
+						<div className="relative w-full h-0 pb-[75%] overflow-hidden rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
 							<Image
 								src={heroImage}
 								alt="Professional Home Design"

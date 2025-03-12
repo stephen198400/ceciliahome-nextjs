@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import { useState } from 'react';
-import { Button } from '../ui/button';
+import { ContactButton } from '../common/contact-button';
 
 type QuestionType = {
 	id: number;
@@ -98,7 +98,7 @@ export default function FAQ() {
 		<section className="py-20 bg-background">
 			<div className="container mx-auto px-4 max-w-[1440px]">
 				<div className="grid lg:grid-cols-[2fr_3fr] gap-12 lg:gap-24">
-					<div className="space-y-8">
+					<div className="space-y-4 lg:space-y-8">
 						<div className="space-y-4">
 							<h2 className="text-6xl font-bold">Frequently Asked Questions</h2>
 							<p className="text-xl text-gray-600 leading-relaxed">
@@ -108,17 +108,14 @@ export default function FAQ() {
 							</p>
 						</div>
 
-						<div className="space-y-6">
+						<div className="space-y-6 hidden lg:block w-full">
 							<p className="text-gray-600">
 								Haven&apos;t found what you&apos;re looking for?
 							</p>
-							<Button
-								variant="default"
-								size="lg"
-								className="inline-flex items-center bg-button-background cursor-pointer text-base font-medium text-white  rounded shadow-sm focus:ring-offset-2 transition-colors duration-200"
-							>
-								Contact Our Team
-							</Button>
+							<ContactButton
+								className=""
+								buttonText="Contact Us To Get A Free Consultation"
+							/>
 						</div>
 					</div>
 					<div className="max-w-3xl">
@@ -132,6 +129,12 @@ export default function FAQ() {
 								}
 							/>
 						))}
+						<div className="mt-10 text-center">
+							<ContactButton
+								className="lg:hidden"
+								buttonText="Let's have a quick talk"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>

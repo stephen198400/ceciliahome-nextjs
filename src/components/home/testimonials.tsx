@@ -170,8 +170,10 @@ export default function Testimonials() {
 		<section className="py-20 overflow-hidden bg-background">
 			<div className="container mx-auto px-4 max-w-[1440px]">
 				<div className="text-center mb-16">
-					<h2 className="text-4xl font-bold mb-4">Loved By Homeowners</h2>
-					<p className="text-gray-600 max-w-2xl mx-auto">
+					<h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+						Loved By Homeowners
+					</h2>
+					<p className="text-gray-600 text-lg max-w-2xl mx-auto">
 						Don&apos;t just take our word for it. Here&apos;s what our satisfied
 						clients have to say about their experience working with us.
 					</p>

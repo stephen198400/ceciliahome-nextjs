@@ -6,6 +6,7 @@ import { Hero } from '@/components/home/hero';
 import Service from '@/components/home/services';
 
 import { States } from '@/components/home/states';
+import Steps from '@/components/home/steps';
 import Testimonials from '@/components/home/testimonials';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
 			<States />
 			<Features />
 			<Service />
+			<Steps />
 			<Testimonials />
 			<FAQ />
 			<Articles />

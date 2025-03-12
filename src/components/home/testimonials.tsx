@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Card } from '../ui/card';
 
 type TestimonialType = {
@@ -177,11 +178,22 @@ export default function Testimonials() {
 						Don&apos;t just take our word for it. Here&apos;s what our satisfied
 						clients have to say about their experience working with us.
 					</p>
-					<div className="inline-flex items-center gap-2 mt-6 px-4 py-2 bg-[#FFFDF7] rounded-full">
-						<span className="text-yellow-500">★</span>
-						<span className="font-semibold">4.8</span>
-						<span className="text-gray-500">from 200+ founders</span>
-					</div>
+					<Link
+						href="https://www.thumbtack.com/ca/concord/structural-engineers/cecilia-home-cmz-studio-inc/service/404592368386564100"
+						className="inline-flex cursor-pointer items-center gap-2.5 mt-8 px-5 py-2 bg-[#FFFDF7] rounded-full border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300"
+					>
+						<Image
+							src="/logos/thumbtack-logo.png"
+							alt="Thumbtack"
+							width={28}
+							height={28}
+							className="w-5 h-5"
+						/>
+						{/* <span className="text-yellow-500">🏆</span> */}
+						<span className="font-medium text-gray-800 hover:text-amber-500">
+							Top 1 On Thumbtack
+						</span>
+					</Link>
 				</div>
 
 				<div className="relative">

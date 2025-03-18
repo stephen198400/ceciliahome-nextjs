@@ -29,7 +29,7 @@ export function ServiceHero({
 							{description}
 						</p>
 						<div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4">
-							<ContactButton buttonText="Get A Free ADU Consultation" />
+							<ContactButton buttonText="Get A Free Consultation" />
 						</div>
 					</div>
 

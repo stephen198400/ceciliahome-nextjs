@@ -114,6 +114,59 @@ const serviceProjects: ServiceProject[] = [
 		projectType: 'Detached ADU',
 	},
 ];
+/* ------------------------------------------ SEO ------------------------------------------ */
+export const metadata = {
+	title: 'ADU Design & Permits California | Accessory Dwelling Unit Plans',
+	description:
+		'Expert California ADU design services with pre-approved plans, permit assistance, and construction guidance. Learn how to build an ADU and maximize property value in California.',
+	keywords: [
+		'ADU California',
+		'accessory dwelling unit California',
+		'ADU plans California',
+		'ADU design California',
+		'pre-approved ADU plans California',
+		'ADU floor plans California',
+		'ADU builders California',
+		'ADU permit California',
+		'cost to build ADU California',
+		'ADU regulations California',
+		'how to build an ADU in California',
+		'cost of ADU design in California',
+		'luxury ADU design Los Angeles',
+		'ADU construction California',
+	],
+
+	// Open Graph 数据 - 优化社交媒体分享
+	openGraph: {
+		title: 'California ADU Design & Plans | Accessory Dwelling Units Experts',
+		description:
+			'Complete ADU solutions from planning to permits. Get custom designs, pre-approved plans, and expert guidance on California accessory dwelling units. Free consultation on costs and regulations.',
+		images: [
+			{
+				url: 'https://www.cecilia123.com/images/adu-showcase.jpg',
+				width: 1200,
+				height: 630,
+				alt: 'Custom ADU Designs in California',
+			},
+		],
+		locale: 'en_US',
+		type: 'website',
+		siteName: 'Cecilia Home',
+	},
+
+	// Twitter Card 元数据
+	twitter: {
+		card: 'summary_large_image',
+		title: 'California ADU Design & Floor Plans | Permit Experts',
+		description:
+			'Find out how to build an ADU in California with our expert design and permit services. Pre-approved plans, regulations assistance, and cost guidance available.',
+		images: ['https://www.cecilia123.com/images/adu-showcase.jpg'],
+	},
+
+	alternates: {
+		canonical: 'https://www.cecilia123.com/services/adu',
+	},
+};
 /* ------------------------------------------ question ------------------------------------------ */
 const questions: QuestionType[] = [
 	{

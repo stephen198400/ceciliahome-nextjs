@@ -45,6 +45,63 @@ const Features = [
 			'Enjoy a stress-free remodeling experience with our comprehensive project management. We handle permits, coordinate tradespeople, and ensure every detail meets our exacting standards for quality.',
 	},
 ];
+/* --------------------------------------------- SEO -------------------------------------------- */
+export const metadata = {
+	title: 'Kitchen & Bathroom Remodel California | Interior Remodeling Services',
+	description:
+		'Expert kitchen, bathroom, living room & sunroom remodeling in California. Custom interior design, permit services, and cost-effective home renovation solutions. Free consultation.',
+	keywords: [
+		'kitchen remodel California',
+		'bathroom remodel California',
+		'home remodeling California',
+		'interior remodel California',
+		'living room remodel California',
+		'sunroom remodel California',
+		'modern bathroom remodel California',
+		'small kitchen remodel California',
+		'open concept kitchen remodel California',
+		'kitchen remodeling contractors California',
+		'bathroom remodel cost California',
+		'best home remodelers California',
+		'cost to remodel a small bathroom in California',
+		'modern kitchen design ideas California with island',
+		'home renovation California',
+	],
+
+	// Open Graph 数据 - 优化社交媒体分享
+	openGraph: {
+		title: 'California Kitchen & Bathroom Remodeling Experts | Interior Design',
+		description:
+			'Transform your California home with our professional interior remodeling services. Specializing in kitchens, bathrooms, living rooms & sunrooms with expert design and permit assistance.',
+		images: [
+			{
+				url: 'https://www.ceciliahome.design/images/kitchen-remodel-showcase.jpg',
+				width: 1200,
+				height: 630,
+				alt: 'Beautiful Kitchen Remodel in California',
+			},
+		],
+		locale: 'en_US',
+		type: 'website',
+		siteName: 'Cecilia Home Design',
+	},
+
+	// Twitter Card 元数据
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Modern Kitchen & Bathroom Remodeling | California Design Experts',
+		description:
+			'See how we transform kitchens, bathrooms, living rooms & sunrooms. Get inspired by our California remodeling projects and request your free design consultation.',
+		images: [
+			'https://www.ceciliahome.design/images/kitchen-remodel-showcase.jpg',
+		],
+	},
+
+	alternates: {
+		canonical: 'https://www.ceciliahome.design/services/interior-remodeling',
+	},
+};
+
 /* ---------------------------------------------- Projects --------------------------------------------- */
 const serviceProjects: ServiceProject[] = [
 	{

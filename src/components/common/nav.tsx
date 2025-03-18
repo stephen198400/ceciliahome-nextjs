@@ -34,28 +34,40 @@ const services: { title: string; href: string; description: string }[] = [
 			'Professional evaluation of foundation conditions and repair solutions to ensure building safety.',
 	},
 	{
-		title: 'Interior Remodeling',
+		title: 'Interior Remodeling(Kitchen, Bathroom, Living Room)',
 		href: '/services/interior-remodeling',
 		description:
 			'Modern renovation of interior spaces including kitchens, bathrooms, and bedrooms.',
 	},
 	{
+		title: 'Home Addition',
+		href: '/services/home-addition',
+		description:
+			'Professional home addition services throughout California. From second story additions to master suite extensions, we design and build beautiful, functional spaces that enhance your lifestyle and increase your property value.',
+	},
+	{
 		title: 'Load-Bearing Wall',
-		href: '/services/load-bearing-wall',
+		href: '/services/load-bearing-wall-removal',
 		description:
 			'Professional removal, modification, and reinforcement of load-bearing walls ensuring structural integrity.',
 	},
 	{
-		title: 'Accessory Structures',
-		href: '/services/accessory-structure',
+		title: 'Foundation Inspection',
+		href: '/services/foundation-inspection',
 		description:
-			'Design and construction of outdoor structures including decks, patios, pergolas, and retaining walls.',
+			'Professional foundation inspection and repair services to ensure the stability of your home.',
 	},
 	{
-		title: 'Permit Application',
-		href: '/services/permit-application',
+		title: 'Permit Application Services',
+		href: '/services/permit-application-services',
 		description:
 			'Assistance with applying for and obtaining various building and construction permits.',
+	},
+	{
+		title: 'Fire Damage Restoration',
+		href: '/services/fire-damage-restoration',
+		description:
+			'Comprehensive fire damage assessment and restoration services for residential and commercial properties.',
 	},
 ];
 

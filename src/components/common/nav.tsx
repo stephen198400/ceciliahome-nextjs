@@ -29,12 +29,12 @@ const services: { title: string; href: string; description: string }[] = [
 	},
 	{
 		title: 'Foundation Assessment',
-		href: '/services/foundation-assessment',
+		href: '/services/foundation-inspection',
 		description:
 			'Professional evaluation of foundation conditions and repair solutions to ensure building safety.',
 	},
 	{
-		title: 'Interior Remodeling(Kitchen, Bathroom, Living Room)',
+		title: 'Interior Remodeling',
 		href: '/services/interior-remodeling',
 		description:
 			'Modern renovation of interior spaces including kitchens, bathrooms, and bedrooms.',
@@ -46,16 +46,10 @@ const services: { title: string; href: string; description: string }[] = [
 			'Professional home addition services throughout California. From second story additions to master suite extensions, we design and build beautiful, functional spaces that enhance your lifestyle and increase your property value.',
 	},
 	{
-		title: 'Load-Bearing Wall',
+		title: 'Load-Bearing Wall Removal',
 		href: '/services/load-bearing-wall-removal',
 		description:
 			'Professional removal, modification, and reinforcement of load-bearing walls ensuring structural integrity.',
-	},
-	{
-		title: 'Foundation Inspection',
-		href: '/services/foundation-inspection',
-		description:
-			'Professional foundation inspection and repair services to ensure the stability of your home.',
 	},
 	{
 		title: 'Permit Application Services',

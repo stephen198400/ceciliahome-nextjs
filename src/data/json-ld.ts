@@ -66,8 +66,10 @@ export const jsonLd: Record<string, JsonLdData> = {
 				url: 'https://www.cecilia123.com',
 				address: {
 					'@type': 'PostalAddress',
-					addressLocality: 'California',
+					streetAddress: '1816 Enclave Place',
+					addressLocality: 'Concord',
 					addressRegion: 'CA',
+					postalCode: '94520',
 					addressCountry: 'US',
 				},
 				geo: {

@@ -8,6 +8,8 @@ import Service from '@/components/home/services';
 import { States } from '@/components/common/states';
 import Steps from '@/components/common/steps';
 import Testimonials from '@/components/home/testimonials';
+import { getJsonLdScript } from '@/data/json-ld';
+import Script from 'next/script';
 
 export const metadata = {
 	title: 'California Architectural & Structural Design | Permit Services',
@@ -64,17 +66,12 @@ export const metadata = {
 	alternates: {
 		canonical: 'https://www.cecilia123.com',
 	},
-
-	// 添加区域和语言信息
-	// metadataBase: new URL('https://www.cecilia123.com'),
-	// verification: {
-	// 	google: 'your-google-verification-code',
-	// },
 };
 
 export default function Home() {
 	return (
 		<div className="w-full ">
+			<Script {...getJsonLdScript('home')} />
 			<Hero />
 			<States />
 			<Features />

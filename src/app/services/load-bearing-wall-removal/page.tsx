@@ -11,6 +11,8 @@ import {
 import ServiceTestimonials, {
 	TestimonialType,
 } from '@/components/services/service-testimonials';
+import { getJsonLdScript } from '@/data/json-ld';
+import Script from 'next/script';
 
 /* ---------------------------------------------- Features --------------------------------------------- */
 const Features = [
@@ -284,6 +286,7 @@ const testimonials: TestimonialType[] = [
 export default function LoadBearingWallRemovalPage() {
 	return (
 		<div>
+			<Script {...getJsonLdScript('services-load-bearing-wall')} />
 			<ServiceHero
 				smallText="CALIFORNIA LOAD-BEARING WALL REMOVAL SPECIALISTS"
 				title="Transform Your Space with Expert Structural Modifications"

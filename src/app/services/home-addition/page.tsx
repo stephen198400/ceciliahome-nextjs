@@ -11,6 +11,8 @@ import {
 import ServiceTestimonials, {
 	TestimonialType,
 } from '@/components/services/service-testimonials';
+import { getJsonLdScript } from '@/data/json-ld';
+import Script from 'next/script';
 
 /* ---------------------------------------------- Features --------------------------------------------- */
 const Features = [
@@ -290,6 +292,7 @@ const testimonials: TestimonialType[] = [
 export default function HomeAdditionPage() {
 	return (
 		<div>
+			<Script {...getJsonLdScript('services-home-addition')} />
 			<ServiceHero
 				smallText="CALIFORNIA HOME ADDITION SPECIALISTS"
 				title="Expand Your Living Space with Expert Home & Room Additions"

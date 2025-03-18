@@ -11,6 +11,8 @@ import {
 import ServiceTestimonials, {
 	TestimonialType,
 } from '@/components/services/service-testimonials';
+import { getJsonLdScript } from '@/data/json-ld';
+import Script from 'next/script';
 
 /* ---------------------------------------------- Features --------------------------------------------- */
 const Features = [
@@ -293,6 +295,7 @@ const testimonials: TestimonialType[] = [
 export default function FireDamageRestorationPage() {
 	return (
 		<div>
+			<Script {...getJsonLdScript('services-fire-damage')} />
 			<ServiceHero
 				smallText="SOUTHERN CALIFORNIA WILDFIRE RECOVERY SPECIALISTS"
 				title="Expert Fire Damage Assessment & Restoration"

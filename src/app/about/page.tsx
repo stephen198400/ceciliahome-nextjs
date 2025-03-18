@@ -4,7 +4,9 @@ import { Features } from '@/components/common/features';
 import { Trust } from '@/components/common/trust';
 
 import Testimonials from '@/components/home/testimonials';
+import { getJsonLdScript } from '@/data/json-ld';
 import { Metadata } from 'next';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
 	title: 'About Us | Cecilia Home',
@@ -14,12 +16,13 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
 	return (
-		<main className="">
+		<div className="relative">
+			<Script {...getJsonLdScript('about')} />
 			<TeamsSection />
 			<AboutStates />
 			<Features />
 			<Testimonials />
 			<Trust />
-		</main>
+		</div>
 	);
 }

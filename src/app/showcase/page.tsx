@@ -1,6 +1,8 @@
 import { Trust } from '@/components/common/trust';
 import ProjectFilter from '@/components/showcase/ProjectFilter';
+import { getJsonLdScript } from '@/data/json-ld';
 import { projects, projectTypes } from '@/data/projects';
+import Script from 'next/script';
 
 // SEO Metadata
 export const metadata = {
@@ -54,6 +56,7 @@ export const metadata = {
 export default function ShowcasesPage() {
 	return (
 		<div>
+			<Script {...getJsonLdScript('showcase')} />
 			<section className="min-h-screen bg-background">
 				<div className="container mx-auto px-4 py-16 md:py-24">
 					<div className="mb-12">

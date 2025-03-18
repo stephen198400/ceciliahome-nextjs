@@ -11,6 +11,8 @@ import {
 import ServiceTestimonials, {
 	TestimonialType,
 } from '@/components/services/service-testimonials';
+import { getJsonLdScript } from '@/data/json-ld';
+import Script from 'next/script';
 
 /* ---------------------------------------------- Features --------------------------------------------- */
 const Features = [
@@ -280,6 +282,7 @@ const testimonials: TestimonialType[] = [
 export default function InteriorRemodelPage() {
 	return (
 		<div>
+			<Script {...getJsonLdScript('services-interior-remodeling')} />
 			<ServiceHero
 				smallText="CALIFORNIA INTERIOR REMODELING SPECIALISTS"
 				title="Transform Your Living Spaces"

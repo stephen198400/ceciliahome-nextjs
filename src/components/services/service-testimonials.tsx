@@ -1,10 +1,10 @@
 'use client';
 
+import { Card } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Card } from '../ui/card';
 
-type TestimonialType = {
+export type TestimonialType = {
 	content: string;
 	rating: number;
 	author: {
@@ -15,75 +15,6 @@ type TestimonialType = {
 		image: string;
 	};
 };
-
-const testimonials: TestimonialType[] = [
-	{
-		content:
-			'Cecilia Home transformed our outdated kitchen into a modern masterpiece. Their attention to detail in the design and construction process was exceptional. The team was professional and completed the project ahead of schedule!',
-		rating: 4.9,
-		author: {
-			name: 'Sarah Chen',
-			city: 'San Francisco',
-			company: 'Homeowner',
-			image: 'https://images.unsplash.com/photo-1573496358961-3c82861ab8f4',
-		},
-	},
-	{
-		content:
-			'Working with Mason on our ADU project was a fantastic experience. Their expertise in navigating permits and designing a space that perfectly complemented our main house was invaluable. The final result exceeded our expectations!',
-		rating: 5.0,
-		author: {
-			name: 'Michael Rodriguez',
-			city: 'Palo Alto',
-			company: 'Property Owner',
-			image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
-		},
-	},
-	{
-		content:
-			'The Cecilia Home team helped us design and build a beautiful deck that completely transformed our outdoor living space. Their knowledge of local building codes and attention to structural integrity was impressive.',
-		rating: 4.7,
-		author: {
-			name: 'Jennifer Park',
-			city: 'San Jose',
-			company: 'Homeowner',
-			image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb',
-		},
-	},
-	{
-		content:
-			'After the wildfire damage, Cecilia Home was instrumental in rebuilding our home. Their team handled everything from structural assessment to final touches, making a difficult time much easier for our family.',
-		rating: 4.8,
-		author: {
-			name: 'David Thompson',
-			city: 'Mountain View',
-			company: 'Homeowner',
-			image: 'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f',
-		},
-	},
-	{
-		content:
-			'The foundation repair work by Cecilia Home was thorough and professional. They explained every step of the process and completed the work with minimal disruption to our daily life. Highly recommend their expertise!',
-		rating: 4.6,
-		author: {
-			name: 'Lisa Wong',
-			city: 'Berkeley',
-			company: 'Property Owner',
-			image: 'https://images.unsplash.com/photo-1526413232644-8a40f03cc03b',
-		},
-	},
-	{
-		content:
-			'Mason and the Cecilia Home team designed a perfect commercial space for our restaurant. Their understanding of both aesthetic appeal and functional requirements was exactly what we needed. Outstanding service!',
-		rating: 4.9,
-		author: {
-			name: 'Robert Kim',
-			city: 'Cupertino',
-			company: 'Restaurant Owner',
-			image: 'https://images.unsplash.com/photo-1474176857210-7287d38d27c6',
-		},
-	},
-];
 
 const StarRating = ({ rating }: { rating: number }) => {
 	// 将评分转换为整数和小数部分
@@ -132,40 +63,49 @@ const StarRating = ({ rating }: { rating: number }) => {
 	return <div className="flex items-center gap-0.5">{stars}</div>;
 };
 
-const TestimonialCard = ({ testimonial }: { testimonial: TestimonialType }) => {
-	return (
-		<Card className="p-6 rounded-xl  cursor-pointer bg-[#FFFDF7] shadow-sm border border-gray-100 flex flex-col h-[280px] group transition-all duration-300 hover:shadow-lg hover:border-gray-200 hover:-translate-y-1 hover:bg-white">
-			<div className="flex items-center justify-between mb-4">
-				<StarRating rating={testimonial.rating} />
-			</div>
-			<p className="text-gray-700 text-base leading-relaxed line-clamp-4 flex-1 group-hover:text-gray-900">
-				{testimonial.content}
-			</p>
-			<div className="flex items-center gap-3 pt-4 border-t border-gray-100">
-				<div className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-transparent group-hover:ring-yellow-400/20">
-					<Image
-						src={testimonial.author.image}
-						alt={testimonial.author.name}
-						fill
-						className="object-cover transition-transform duration-300 group-hover:scale-105"
-					/>
-				</div>
-				<div>
-					<p className="font-medium text-gray-900 group-hover:text-yellow-600">
-						{testimonial.author.name}
-					</p>
-					<p className="text-sm text-gray-500">
-						{testimonial.author.city}, CA
-						{testimonial.author.batch && ` (${testimonial.author.batch})`}
-					</p>
-				</div>
-			</div>
-		</Card>
-	);
-};
+interface ServiceTestimonialsProps {
+	testimonials: TestimonialType[];
+}
 
-export default function Testimonials() {
+export default function ServiceTestimonials({
+	testimonials,
+}: ServiceTestimonialsProps) {
 	const gridTestimonials = testimonials.slice(0, 6);
+	const TestimonialCard = ({
+		testimonial,
+	}: {
+		testimonial: TestimonialType;
+	}) => {
+		return (
+			<Card className="p-6 rounded-xl  cursor-pointer bg-[#FFFDF7] shadow-sm border border-gray-100 flex flex-col h-[280px] group transition-all duration-300 hover:shadow-lg hover:border-gray-200 hover:-translate-y-1 hover:bg-white">
+				<div className="flex items-center justify-between mb-4">
+					<StarRating rating={testimonial.rating} />
+				</div>
+				<p className="text-gray-700 text-base leading-relaxed line-clamp-4 flex-1 group-hover:text-gray-900">
+					{testimonial.content}
+				</p>
+				<div className="flex items-center gap-3 pt-4 border-t border-gray-100">
+					<div className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-transparent group-hover:ring-yellow-400/20">
+						<Image
+							src={testimonial.author.image}
+							alt={testimonial.author.name}
+							fill
+							className="object-cover transition-transform duration-300 group-hover:scale-105"
+						/>
+					</div>
+					<div>
+						<p className="font-medium text-gray-900 group-hover:text-yellow-600">
+							{testimonial.author.name}
+						</p>
+						<p className="text-sm text-gray-500">
+							{testimonial.author.city}, CA
+							{testimonial.author.batch && ` (${testimonial.author.batch})`}
+						</p>
+					</div>
+				</div>
+			</Card>
+		);
+	};
 
 	return (
 		<section className="py-20 overflow-hidden bg-background">

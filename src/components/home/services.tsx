@@ -103,9 +103,9 @@ export default function ServiceB() {
 						asChild
 						variant="default"
 						size="lg"
-						className="group rounded bg-button-background"
+						className="group rounded bg-button-background py-6 text-md"
 					>
-						<Link href="/services">
+						<Link href="/showcase">
 							View All Services
 							<ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
 						</Link>

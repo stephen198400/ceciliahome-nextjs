@@ -1,6 +1,6 @@
 'use client';
 
-import { ChevronDown, ChevronRight, Menu, X } from 'lucide-react';
+import { ChevronDown, ChevronRight, Menu, Phone, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
@@ -17,12 +17,13 @@ import {
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
+import { ContactButton } from './contact-button';
 
 // Services data
 const services: { title: string; href: string; description: string }[] = [
 	{
 		title: 'ADU Design',
-		href: '/services/adu-design',
+		href: '/services/adus',
 		description:
 			'Accessory Dwelling Unit design providing complete solutions for independent living spaces.',
 	},
@@ -71,9 +72,9 @@ export function Nav() {
 						<Image
 							src="/logo.svg" // Ensure this file exists or replace with actual logo path
 							alt="Cecilia Home"
-							width={40}
-							height={40}
-							className="h-8 w-8"
+							width={20}
+							height={20}
+							className="h-5 w-5"
 						/>
 						<span className="text-xl font-bold ">Cecilia Home</span>
 					</Link>
@@ -84,19 +85,13 @@ export function Nav() {
 					<NavigationMenu>
 						<NavigationMenuList>
 							<NavigationMenuItem>
-								<Link href="/" legacyBehavior passHref>
+								<Link href="/services/adus" legacyBehavior passHref>
 									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-										Home
+										ADUs
 									</NavigationMenuLink>
 								</Link>
 							</NavigationMenuItem>
-							<NavigationMenuItem>
-								<Link href="/about" legacyBehavior passHref>
-									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-										About
-									</NavigationMenuLink>
-								</Link>
-							</NavigationMenuItem>
+
 							<NavigationMenuItem>
 								<NavigationMenuTrigger>Services</NavigationMenuTrigger>
 								<NavigationMenuContent>
@@ -114,16 +109,16 @@ export function Nav() {
 								</NavigationMenuContent>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
-								<Link href="/showcase" legacyBehavior passHref>
+								<Link href="/about" legacyBehavior passHref>
 									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-										Showcase
+										About
 									</NavigationMenuLink>
 								</Link>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
-								<Link href="/adus" legacyBehavior passHref>
+								<Link href="/showcase" legacyBehavior passHref>
 									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-										ADUs
+										Showcase
 									</NavigationMenuLink>
 								</Link>
 							</NavigationMenuItem>
@@ -134,10 +129,12 @@ export function Nav() {
 				{/* Right section with CTA and mobile menu */}
 				<div className="ml-auto flex items-center space-x-4">
 					{/* CTA button - hidden on small mobile */}
-					<Link href="/contact" className="hidden  sm:block">
-						<Button className="bg-button-background">Contact Us</Button>
+					<Link href="tel:+15109091933" className="hidden  sm:block">
+						<Button className="bg-button-background">
+							Call Us
+							<Phone className="h-4 w-4" />
+						</Button>
 					</Link>
-
 					{/* Mobile menu button - only visible on mobile */}
 					<Button
 						variant="ghost"
@@ -158,7 +155,7 @@ export function Nav() {
 			{/* Mobile menu - dropdown from top with improved animation */}
 			<div
 				className={cn(
-					'absolute left-0 right-0 top-16 z-50 bg-background border-b shadow-lg md:hidden overflow-hidden transition-all duration-300 ease-in-out',
+					'absolute left-0 right-0 top-12 z-50 bg-background border-b shadow-lg md:hidden overflow-hidden transition-all duration-300 ease-in-out',
 					mobileMenuOpen
 						? 'max-h-[1000px] opacity-100 border-b'
 						: 'max-h-0 opacity-0 border-b-0 py-0'
@@ -170,20 +167,13 @@ export function Nav() {
 						mobileMenuOpen ? 'py-4' : 'py-0'
 					)}
 				>
-					<nav className="flex flex-col space-y-4">
+					<nav className="flex flex-col ">
 						<Link
-							href="/"
+							href="/services/adus"
 							className="text-lg font-medium transition-colors hover:text-primary py-2 border-b border-muted"
 							onClick={() => setMobileMenuOpen(false)}
 						>
-							Home
-						</Link>
-						<Link
-							href="/about"
-							className="text-lg font-medium transition-colors hover:text-primary py-2 border-b border-muted"
-							onClick={() => setMobileMenuOpen(false)}
-						>
-							About
+							ADUs
 						</Link>
 
 						{/* Collapsible Services Menu */}
@@ -215,7 +205,13 @@ export function Nav() {
 								</div>
 							)}
 						</div>
-
+						<Link
+							href="/about"
+							className="text-lg font-medium transition-colors hover:text-primary py-2 border-b border-muted"
+							onClick={() => setMobileMenuOpen(false)}
+						>
+							About
+						</Link>
 						<Link
 							href="/showcase"
 							className="text-lg font-medium transition-colors hover:text-primary py-2 border-b border-muted"
@@ -223,19 +219,12 @@ export function Nav() {
 						>
 							Showcase
 						</Link>
-						<Link
-							href="/adus"
-							className="text-lg font-medium transition-colors hover:text-primary py-2 border-b border-muted"
-							onClick={() => setMobileMenuOpen(false)}
-						>
-							ADUs
-						</Link>
+
 						<div className="pt-2">
-							<Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-								<Button className="w-full bg-button-background">
-									Contact Us
-								</Button>
-							</Link>
+							<ContactButton
+								className="w-full"
+								buttonText="Let's have a quick talk"
+							/>
 						</div>
 					</nav>
 				</div>

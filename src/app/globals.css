@@ -49,8 +49,9 @@
 }
 
 :root {
-	--background: #efebe8;
-	--secondary-background: #e6e3d6;
+	/* --background: #efebe8; */
+	--background: #f8f5ee;
+	--secondary-background: #fffdf7;
 	--button-background: #b46c53;
 	--hover-background: #fffbee;
 	--foreground: oklch(0.145 0 0);

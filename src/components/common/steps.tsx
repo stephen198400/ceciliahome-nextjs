@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import { ContactButton } from '../common/contact-button';
+import { ContactButton } from './contact-button';
 
 interface Step {
 	number: string;
@@ -49,7 +49,7 @@ const steps: Step[] = [
 
 export default function Steps() {
 	return (
-		<section className="bg-background py-16 md:py-20">
+		<section className=" py-16 md:py-20 bg-secondary-background">
 			<div className="container mx-auto px-4">
 				<div>
 					<h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
@@ -74,8 +74,8 @@ export default function Steps() {
 								<Image
 									src={step.icon}
 									alt={step.title}
-									width={50}
-									height={50}
+									width={48}
+									height={48}
 									className="w-12 h-12"
 								/>
 							</div>

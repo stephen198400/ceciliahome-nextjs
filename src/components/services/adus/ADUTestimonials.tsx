@@ -1,8 +1,8 @@
 'use client';
 
+import { Card } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Card } from '../ui/card';
 
 type TestimonialType = {
 	content: string;
@@ -164,7 +164,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: TestimonialType }) => {
 	);
 };
 
-export default function Testimonials() {
+export default function ADUTestimonials() {
 	const gridTestimonials = testimonials.slice(0, 6);
 
 	return (
@@ -180,7 +180,7 @@ export default function Testimonials() {
 					</p>
 					<Link
 						href="https://www.thumbtack.com/ca/concord/structural-engineers/cecilia-home-cmz-studio-inc/service/404592368386564100"
-						className="inline-flex cursor-pointer items-center gap-2 mt-8 px-5 py-1 bg-[#FFFDF7] rounded-full border border-gray-200  hover:shadow-md transition-all duration-300"
+						className="inline-flex cursor-pointer items-center gap-2.5 mt-8 px-5 py-1 bg-[#FFFDF7] rounded-full border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300"
 					>
 						<div className="flex items-center gap-4">
 							<div className="flex  gap-2">
@@ -189,9 +189,9 @@ export default function Testimonials() {
 										<Image
 											src="/logos/thumbtack-logo.png"
 											alt="Thumbtack Logo"
-											width={96}
-											height={96}
-											className="h-8 w-auto"
+											width={48}
+											height={48}
+											className="h-6 w-auto"
 										/>
 									</div>
 								</div>

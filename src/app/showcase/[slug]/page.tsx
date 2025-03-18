@@ -1,15 +1,24 @@
 import { projects } from '@/data/projects';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+
+// Generate static params for the page
+export function generateStaticParams() {
+	return projects.map((project) => ({
+		slug: project.slug,
+	}));
+}
 
 // Generate metadata for the page
 export async function generateMetadata({
 	params,
 }: {
-	params: { slug: string };
-}) {
-	const project = projects.find((p) => p.slug === params.slug);
+	params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+	const { slug } = await params;
+	const project = projects.find((p) => p.slug === slug);
 
 	if (!project) {
 		return {
@@ -25,13 +34,16 @@ export async function generateMetadata({
 	};
 }
 
-export default function ProjectDetailPage({
+export default async function ProjectDetailPage({
 	params,
 }: {
-	params: { slug: string };
+	params: Promise<{ slug: string }>;
 }) {
+	// 解析 params Promise 以获取 slug
+	const { slug } = await params;
+
 	// Find the project by slug
-	const project = projects.find((p) => p.slug === params.slug);
+	const project = projects.find((p) => p.slug === slug);
 
 	// If project not found, show 404
 	if (!project) {

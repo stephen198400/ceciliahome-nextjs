@@ -9,16 +9,7 @@ export interface ServiceProject {
 	coverImage: string;
 	location: string;
 	squareFeet: number;
-	projectType:
-		| 'Detached ADU'
-		| 'Attached ADU'
-		| 'Garage Conversion'
-		| 'Junior ADU'
-		| 'Kitchen Remodel'
-		| 'Bathroom Renovation'
-		| 'Living Room Redesign'
-		| 'Master Suite Remodel'
-		| 'Dining Room Redesign';
+	projectType: string;
 }
 
 interface ServiceShowcaseProps {

@@ -77,7 +77,7 @@ export function Nav() {
 					<Link href="/" className="flex items-center space-x-2">
 						<Image
 							src="/logo.svg" // Ensure this file exists or replace with actual logo path
-							alt="Cecilia Home"
+							alt="Cecilia Home Logo"
 							width={20}
 							height={20}
 							className="h-5 w-5"

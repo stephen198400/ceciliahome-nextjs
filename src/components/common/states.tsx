@@ -134,9 +134,9 @@ export const States = () => {
 		<section className="py-16 md:py-20 bg-background">
 			<div className="container mx-auto px-6 md:px-10">
 				<div className="mb-16 max-w-3xl">
-					<h3 className="text-3xl md:text-5xl font-bold text-gray-900">
+					<h2 className="text-3xl md:text-5xl font-bold text-gray-900">
 						Design and Engineering Services Throughout California
-					</h3>
+					</h2>
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border-t border-gray-300 pt-12">

@@ -66,10 +66,10 @@ export const jsonLd: Record<string, JsonLdData> = {
 				url: 'https://www.cecilia123.com',
 				address: {
 					'@type': 'PostalAddress',
-					streetAddress: '1816 Enclave Place',
+					streetAddress: '1816 Enclave Pl',
 					addressLocality: 'Concord',
 					addressRegion: 'CA',
-					postalCode: '94520',
+					postalCode: '94519',
 					addressCountry: 'US',
 				},
 				geo: {
@@ -77,12 +77,52 @@ export const jsonLd: Record<string, JsonLdData> = {
 					latitude: 37.7749,
 					longitude: -122.4194,
 				},
-				openingHoursSpecification: {
-					'@type': 'OpeningHoursSpecification',
-					dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-					opens: '09:00',
-					closes: '18:00',
+				aggregateRating: {
+					'@type': 'AggregateRating',
+					ratingValue: '3.7',
+					reviewCount: '9',
+					bestRating: '5',
+					worstRating: '1',
 				},
+				openingHoursSpecification: [
+					{
+						'@type': 'OpeningHoursSpecification',
+						dayOfWeek: ['Monday'],
+						opens: '10:00',
+						closes: '18:00',
+					},
+					{
+						'@type': 'OpeningHoursSpecification',
+						dayOfWeek: ['Tuesday'],
+						opens: '10:00',
+						closes: '18:00',
+					},
+					{
+						'@type': 'OpeningHoursSpecification',
+						dayOfWeek: ['Wednesday'],
+						opens: '10:00',
+						closes: '18:00',
+					},
+					{
+						'@type': 'OpeningHoursSpecification',
+						dayOfWeek: ['Thursday'],
+						opens: '10:00',
+						closes: '18:00',
+					},
+					{
+						'@type': 'OpeningHoursSpecification',
+						dayOfWeek: ['Friday'],
+						opens: '10:00',
+						closes: '18:00',
+					},
+					{
+						'@type': 'OpeningHoursSpecification',
+						dayOfWeek: ['Saturday', 'Sunday'],
+						opens: '00:00',
+						closes: '00:00',
+					},
+				],
+				description: 'Architectural designer in Concord, California',
 			},
 			{
 				'@type': 'Service',

@@ -49,10 +49,9 @@ const Features = [
 ];
 /* --------------------------------------------- SEO -------------------------------------------- */
 export const metadata = {
-	title:
-		'Southern California Wildfire Damage Restoration & Structural Rebuilding',
+	title: 'Southern California Fire Damage Restoration & House Rebuilding',
 	description:
-		'24-hour fire damage restoration services in Southern California. Expert structural assessment, repair, and complete rebuilding design for wildfire-affected homes. Free consultation.',
+		'Expert fire damage restoration services in Southern California. Expert structural assessment, repair, and complete rebuilding design for wildfire-affected homes.',
 	keywords: [
 		'fire damage restoration California',
 		'wildfire structural assessment',
@@ -225,7 +224,7 @@ const questions: QuestionType[] = [
 const testimonials: TestimonialType[] = [
 	{
 		content:
-			"After losing our Malibu home in the Woolsey Fire, Cecilia Home guided us through every step of rebuilding. Their structural engineers designed a beautiful new home incorporating fire-resistant features we hadn't considered. The construction team was exceptional, and they handled all permitting and insurance documentation. We now have a safer, more energy-efficient home than before.",
+			"After losing our Malibu home in the Woolsey Fire, Mason and the Cecilia Home team guided us through every step of rebuilding. Their structural engineers designed a beautiful new home incorporating fire-resistant features we hadn't considered. Their Assistance with Insurance Claims was invaluable—they documented everything meticulously and advocated for us with our insurance company. We now have a safer, more energy-efficient home than before.",
 		rating: 5.0,
 		author: {
 			name: 'Emily Richardson',
@@ -236,10 +235,10 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"When our San Diego home suffered fire damage, we were devastated. Cecilia Home's emergency response team arrived within hours, securing our property and beginning the assessment process. Their clear explanation of necessary repairs and transparent timeline gave us confidence during a difficult time. Their skilled restoration preserved as much of our original home as possible while making critical improvements.",
+			"When our San Diego home suffered fire damage, we were devastated. Cecilia Home's emergency response team arrived within hours, securing our property and beginning the assessment process. Mason personally oversaw our Assistance with Insurance Claims, providing detailed documentation that maximized our coverage. Their fire restoration experts preserved as much of our original home as possible while making critical safety improvements.",
 		rating: 4.9,
 		author: {
-			name: 'Miguel Sanchez',
+			name: 'Michael Sanchez',
 			city: 'San Diego',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
@@ -247,7 +246,7 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"Our commercial building in Orange County experienced significant fire damage from an electrical fault. Cecilia Home's quick response prevented further damage to inventory and their phased reconstruction approach allowed us to keep portions of our business operational during repairs. Their team coordinated seamlessly with our insurance provider, making the entire process remarkably smooth considering the circumstances.",
+			"Our commercial building in Orange County experienced significant fire damage from an electrical fault. Cecilia Home's quick response prevented further damage, and their Assistance with Insurance Claims streamlined what could have been a nightmarish process. Mason's expertise in commercial fire restoration allowed portions of our business to remain operational during repairs. Their coordination with our insurance provider made recovery remarkably efficient.",
 		rating: 4.8,
 		author: {
 			name: 'Jennifer Liu',
@@ -258,7 +257,7 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'After the Thomas Fire destroyed our Ventura home, Cecilia Home helped us see the rebuilding process as an opportunity rather than just a recovery. Their designers incorporated our wishlist features while their construction team ensured everything met enhanced fire safety standards. Their knowledge of post-wildfire permitting expedited the process significantly, getting us back home months earlier than expected.',
+			'After the Thomas Fire destroyed our Ventura home, Mason at Cecilia Home helped us see the rebuilding process as an opportunity. Their fire restoration specialists incorporated our wishlist features while ensuring enhanced safety standards. Their Assistance with Insurance Claims was exceptional—they documented losses thoroughly and expedited our settlement. Their knowledge of post-wildfire permitting got us back home months earlier than expected.',
 		rating: 5.0,
 		author: {
 			name: 'Robert Mendez',
@@ -269,10 +268,10 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"The smoke damage to our Santa Barbara home from nearby wildfires seemed overwhelming until Cecilia Home's remediation team arrived. Their thorough cleaning process eliminated all traces of smoke odor that two previous companies couldn't resolve. Their attention to detail was impressive, addressing hidden areas like inside cabinets and HVAC systems where smoke residue was trapped.",
+			"The smoke damage to our Santa Barbara home from nearby wildfires seemed overwhelming until Cecilia Home's fire restoration team arrived. Mason personally supervised the remediation, eliminating all traces of smoke odor that two previous companies couldn't resolve. Their comprehensive Assistance with Insurance Claims documented even hidden smoke damage our adjuster had missed. Their thorough approach addressed even hidden areas where smoke residue was trapped.",
 		rating: 4.7,
 		author: {
-			name: 'Amanda Torres',
+			name: 'Sarah Torres',
 			city: 'Santa Barbara',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604',
@@ -280,7 +279,7 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'Restoring our historic Los Angeles home after fire damage required specialized expertise that Cecilia Home delivered. Their understanding of historic preservation alongside modern safety requirements was impressive. They salvaged original features wherever possible while discreetly incorporating necessary updates. The craftsmanship matched the original construction quality while providing much better fire protection.',
+			"Restoring our historic Los Angeles home after fire damage required specialized expertise that Cecilia Home delivered. Mason's understanding of historic preservation alongside modern safety requirements was impressive. Their Assistance with Insurance Claims included detailed documentation of our home's unique architectural features, ensuring proper valuation. They salvaged original elements while incorporating superior fire protection and modern conveniences.",
 		rating: 5.0,
 		author: {
 			name: 'David Chen',
@@ -297,10 +296,10 @@ export default function FireDamageRestorationPage() {
 		<div>
 			<Script {...getJsonLdScript('services-fire-damage')} />
 			<ServiceHero
-				smallText="SOUTHERN CALIFORNIA WILDFIRE RECOVERY SPECIALISTS"
-				title="Expert Fire Damage Assessment & Restoration"
+				smallText="Your Local Fire Damage Restoration Experts"
+				title="Southern California Fire Damage Restoration & House Rebuilding"
 				description="24-hour emergency response for wildfire and residential fire damage throughout Southern California. Our structural engineers and construction teams provide comprehensive assessment, restoration, and complete rebuilding services."
-				image="https://images.unsplash.com/photo-1517594422361-5eeb8ae275a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHw0fHxmaXJlJTIwZGFtYWdlJTIwcmVzdG9yYXRpb24lMjBjb25zdHJ1Y3Rpb258ZW58MHx8fHwxNzQyMzA0NTcwfDA&ixlib=rb-4.0.3&q=80&w=1200&h=800"
+				image="/images/home/wildfire-reconstruction.webp"
 			/>
 			<States />
 

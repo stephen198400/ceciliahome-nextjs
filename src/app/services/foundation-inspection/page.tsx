@@ -49,9 +49,9 @@ const Features = [
 ];
 /* --------------------------------------------- SEO -------------------------------------------- */
 export const metadata = {
-	title: 'California Foundation Inspection Services | Structural Engineers',
+	title: 'alifornia Foundation Inspection & Report Services',
 	description:
-		"Expert foundation inspection services throughout California. Our structural engineers identify cracks, settlement issues, moisture problems, and seismic vulnerabilities to protect your property's value.",
+		'Expert California foundation inspections by structural engineers. We identify cracks, settlement, moisture & seismic issues to protect your property value. Detailed reports',
 	keywords: [
 		'foundation inspection California',
 		'structural engineer foundation inspection',
@@ -224,7 +224,7 @@ const questions: QuestionType[] = [
 const testimonials: TestimonialType[] = [
 	{
 		content:
-			'The foundation inspection from Cecilia Home was incredibly thorough. Their structural engineer identified drainage issues causing foundation settlement that three previous inspectors had missed. The detailed report included clear photos documenting each problem and provided prioritized repair recommendations that helped us save our hillside home from further damage.',
+			'The foundation inspection from Cecilia Home was incredibly thorough. Mason personally led the structural assessment team and identified drainage issues causing foundation settlement that three previous inspectors had missed. Their detailed report included clear photos documenting each problem and provided prioritized repair recommendations that saved our hillside home from potentially catastrophic damage.',
 		rating: 5.0,
 		author: {
 			name: 'Maria Sanchez',
@@ -235,7 +235,7 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"We were about to purchase a Victorian home in San Francisco when Cecilia Home's inspection revealed significant foundation issues not disclosed by the seller. Their engineer explained exactly how inadequate seismic retrofitting created risks specific to our neighborhood. We were able to negotiate $80,000 off the purchase price to cover the necessary repairs.",
+			"We were about to purchase a Victorian home in San Francisco when Mason from Cecilia Home conducted a foundation inspection that revealed significant seismic vulnerabilities not disclosed by the seller. The comprehensive foundation report explained exactly how inadequate retrofitting created risks specific to our neighborhood's soil conditions. Thanks to Cecilia Home's inspection expertise, we negotiated $80,000 off the purchase price to cover necessary repairs.",
 		rating: 4.9,
 		author: {
 			name: 'James Wilson',
@@ -246,46 +246,46 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'As a commercial property manager, I needed a reliable assessment of foundation issues affecting our retail space. Cecilia Home delivered a remarkably detailed inspection that not only identified the problems but provided a phased repair approach that allowed our tenants to remain open during repairs. Their expertise saved us significant business interruption costs.',
+			"As a commercial property manager, I needed a reliable foundation inspection for our retail space showing signs of settling. Cecilia Home delivered a remarkably detailed structural assessment that not only identified the problems but provided a phased repair approach. Mason's expertise in commercial foundation systems allowed our tenants to remain open during repairs, saving us significant business interruption costs.",
 		rating: 4.8,
 		author: {
-			name: 'David Chen',
+			name: 'Linda Chang',
 			city: 'San Diego',
 			company: 'Commercial Property Manager',
-			image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a',
+			image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956',
 		},
 	},
 	{
 		content:
-			"Following an earthquake, we noticed new cracks in our foundation and walls. Cecilia Home's emergency assessment clearly documented which damage was earthquake-related for our insurance claim. Their engineer provided a prioritized repair plan that addressed immediate safety concerns first. The inspection report was accepted without question by our insurance company.",
+			"Following an earthquake, we noticed new cracks in our foundation and walls. Mason at Cecilia Home conducted an emergency foundation inspection that clearly documented which damage was earthquake-related for our insurance claim. Their structural engineer provided a prioritized repair plan addressing immediate safety concerns first. Cecilia Home's detailed foundation assessment report was accepted without question by our insurance company.",
 		rating: 5.0,
 		author: {
-			name: 'Sophia Patel',
+			name: 'Thomas Patel',
 			city: 'Oakland',
 			company: 'Homeowner',
+			image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d',
+		},
+	},
+	{
+		content:
+			"We almost walked away from our dream home when we noticed foundation cracks during the viewing. Cecilia Home's pre-purchase foundation inspection distinguished between cosmetic settling cracks and actual structural issues. Mason personally reviewed the property's geological conditions and provided a clear explanation of what needed immediate attention versus what could be monitored, giving us the confidence to proceed with the purchase.",
+		rating: 4.7,
+		author: {
+			name: 'Sophia Johnson',
+			city: 'Sacramento',
+			company: 'Home Buyer',
 			image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df',
 		},
 	},
 	{
 		content:
-			"We almost walked away from our dream home when we noticed foundation cracks during the viewing. Cecilia Home's pre-purchase inspection distinguished between cosmetic settling cracks and actual structural issues. Their clear explanation of what needed immediate attention versus what could be monitored gave us the confidence to proceed with the purchase.",
-		rating: 4.7,
-		author: {
-			name: 'Michael Johnson',
-			city: 'Sacramento',
-			company: 'Home Buyer',
-			image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e',
-		},
-	},
-	{
-		content:
-			"As a property investor, I rely on Cecilia Home's foundation inspections before every multi-unit purchase. Their assessment of a Santa Barbara apartment complex identified progressive settlement issues that would have been catastrophic if left unaddressed. Their repair recommendations allowed us to develop an effective remediation strategy while keeping tenants in place.",
+			"As a property investor, I rely on Mason and Cecilia Home's foundation inspections before every multi-unit purchase. Their structural assessment of a Santa Barbara apartment complex identified progressive foundation settlement issues that would have been catastrophic if left unaddressed. Cecilia Home's foundation expertise allowed us to develop an effective remediation strategy while keeping tenants in place, protecting both my investment and their homes.",
 		rating: 4.9,
 		author: {
-			name: 'Elena Rodriguez',
+			name: 'Daniel Rodriguez',
 			city: 'Santa Barbara',
 			company: 'Real Estate Investor',
-			image: 'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604',
+			image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
 		},
 	},
 ];
@@ -296,10 +296,10 @@ export default function FoundationInspectionPage() {
 		<div>
 			<Script {...getJsonLdScript('services-foundation-inspection')} />
 			<ServiceHero
-				smallText="CALIFORNIA STRUCTURAL ENGINEERS"
-				title="Expert Foundation Inspection Services"
+				smallText="Your Local Foundation Inspection Experts"
+				title="California Foundation Inspection & Report Services"
 				description="Comprehensive foundation assessments by licensed structural engineers. We identify foundation cracks, settlement issues, drainage problems, and seismic vulnerabilities to protect your California property investment."
-				image="https://images.unsplash.com/photo-1568605114967-8130f3a36994?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHwzfHxob3VzZSUyMGZvdW5kYXRpb24lMjBpbnNwZWN0aW9ufGVufDB8fHx8MTc0MjMwNDExNnww&ixlib=rb-4.0.3&q=80&w=1200&h=800"
+				image="/images/home/foundation-inspection.webp"
 			/>
 			<States />
 

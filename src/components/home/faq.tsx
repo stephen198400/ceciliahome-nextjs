@@ -95,13 +95,15 @@ export default function FAQ() {
 	const [openId, setOpenId] = useState<number | null>(null);
 
 	return (
-		<section className="py-20 bg-background">
+		<section className="py-16 md:py-20 bg-background">
 			<div className="container mx-auto px-4 max-w-[1440px]">
 				<div className="grid lg:grid-cols-[2fr_3fr] gap-12 lg:gap-24">
 					<div className="space-y-4 lg:space-y-8">
 						<div className="space-y-4">
-							<h2 className="text-6xl font-bold">Frequently Asked Questions</h2>
-							<p className="text-xl text-gray-600 leading-relaxed">
+							<h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+								Frequently Asked Questions
+							</h2>
+							<p className="text-gray-600 text-lg">
 								Find answers to frequently asked questions about our services,
 								process, and more. We&apos;re here to help you understand every
 								aspect of your project.

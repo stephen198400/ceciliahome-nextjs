@@ -108,7 +108,7 @@ export default function ServiceTestimonials({
 	};
 
 	return (
-		<section className="py-20 overflow-hidden bg-background">
+		<section className="py-16 md:py-20 overflow-hidden bg-background">
 			<div className="container mx-auto px-4 max-w-[1440px]">
 				<div className="text-center mb-16">
 					<h2 className="text-4xl md:text-5xl font-bold text-center mb-4">

@@ -14,8 +14,8 @@ export function ServiceHero({
 	image,
 }: ServiceHeroProps) {
 	return (
-		<section className="min-h-[66.67vh] flex items-center overflow-hidden bg-background">
-			<div className="container mx-auto px-4 py-8 sm:py-16 lg:py-24">
+		<section className="min-h-[66.67vh] flex py-16 md:py-20 items-center overflow-hidden bg-background">
+			<div className="container mx-auto px-4">
 				<div className="flex flex-col md:flex-row items-stretch gap-8 lg:gap-12">
 					{/* Left Content */}
 					<div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left justify-center md:pr-4 lg:pr-8">

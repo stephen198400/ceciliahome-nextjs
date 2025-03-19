@@ -10,30 +10,30 @@ type StatItem = {
 	suffix?: string;
 };
 
-// 统计数据 - 基于图片中的内容
+// 统计数据 - 更新基于新提供的信息
 const stats: StatItem[] = [
 	{
-		value: '25 Years',
-		numericValue: 25,
-		label: 'Year Experience',
+		value: '20 Years',
+		numericValue: 20,
+		label: 'California Registered Civil Engineer',
 	},
 	{
-		value: '250+',
-		numericValue: 250,
+		value: '2000+',
+		numericValue: 2000,
 		suffix: '+',
-		label: 'Team Expert',
+		label: 'Projects Completed',
 	},
 	{
-		value: '500+',
-		numericValue: 500,
-		suffix: '+',
-		label: 'Awards & honor',
+		value: '95%',
+		numericValue: 95,
+		suffix: '%',
+		label: 'Permit Approval Rate',
 	},
 	{
-		value: '1000+',
-		numericValue: 1000,
+		value: '50+',
+		numericValue: 50,
 		suffix: '+',
-		label: 'Clients worldwide',
+		label: 'Professional Team Members',
 	},
 ];
 
@@ -134,10 +134,7 @@ export const States = () => {
 		<section className="py-16 md:py-20 bg-background">
 			<div className="container mx-auto px-6 md:px-10">
 				<div className="mb-16 max-w-3xl">
-					<h2 className=" text-gray-500 text-xl font-semibold mb-2">
-						START WITH US
-					</h2>
-					<h3 className="text-4xl md:text-5xl font-bold text-gray-900">
+					<h3 className="text-3xl md:text-5xl font-bold text-gray-900">
 						Design and Engineering Services Throughout California
 					</h3>
 				</div>
@@ -151,7 +148,11 @@ export const States = () => {
 							<AnimatedCounter
 								targetValue={stat.numericValue}
 								suffix={stat.suffix}
-								prefix={stat.label === 'Year Experience' ? '' : ''}
+								prefix={
+									stat.label === 'California Registered Civil Engineer'
+										? ''
+										: ''
+								}
 							/>
 							<p className="text-lg text-gray-700 mt-2">{stat.label}</p>
 						</div>
@@ -175,9 +176,10 @@ export const States = () => {
 							Our team ensures that every client receives the most effective
 							architectural strategies, all while building long-term
 							relationships focused on achieving the best possible outcomes.
-							With over 25 years of combined experience, we have successfully
-							served clients throughout California with exceptional results and
-							unparalleled customer satisfaction.
+							With our California registered civil engineers and a 95% permit
+							approval rate, we have successfully completed over 2,000 projects
+							throughout California with exceptional results and unparalleled
+							customer satisfaction.
 						</p>
 					</div>
 				</div>

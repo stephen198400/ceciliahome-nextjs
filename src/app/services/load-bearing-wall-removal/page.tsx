@@ -76,9 +76,9 @@ export const metadata = {
 	// Open Graph 数据
 	openGraph: {
 		title:
-			'Structural & Load-Bearing Wall Removal | California Open Kitchen Specialists',
+			'Load-Bearing Wall & Structural Removal | California Open Kitchen Design',
 		description:
-			'Expert structural and load-bearing wall removal services throughout California. We specialize in converting divided spaces into stunning open concept kitchens with proper engineering and permit compliance.',
+			'Expert structural and load-bearing wall removal services California. We specialize in converting divided spaces into stunning open concept kitchens with proper engineering and permit compliance.',
 		images: [
 			{
 				url: 'https://www.cecilia123.com/images/structural-wall-to-open-kitchen.jpg',
@@ -288,10 +288,10 @@ export default function LoadBearingWallRemovalPage() {
 		<div>
 			<Script {...getJsonLdScript('services-load-bearing-wall')} />
 			<ServiceHero
-				smallText="CALIFORNIA LOAD-BEARING WALL REMOVAL SPECIALISTS"
-				title="Transform Your Space with Expert Structural Modifications"
+				smallText="Your Local Load-Bearing Wall Removal Experts"
+				title="California Load-Bearing Wall Removal Experts"
 				description="Professional load-bearing wall removal and structural beam installation services in California. Create beautiful open concept kitchens and living spaces while ensuring structural integrity and code compliance."
-				image="https://images.unsplash.com/photo-1484154218962-a197022b5858?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHwyfHxzdHJ1Y3R1cmFsJTIwYmVhbSUyMGluc3RhbGxhdGlvbiUyMGtpdGNoZW58ZW58MHx8fHwxNzQyMzAyMzAyfDA&ixlib=rb-4.0.3&q=80&w=1200&h=800"
+				image="/images/home/load-bearing-wall-removal.png"
 			/>
 			<States />
 

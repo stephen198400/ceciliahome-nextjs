@@ -1,10 +1,6 @@
 import Image from 'next/image';
 import { ContactButton } from '../common/contact-button';
 
-// 获取图片资源
-const heroImage =
-	'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-
 export function Hero() {
 	return (
 		<section className="min-h-[66.67vh] flex items-center overflow-hidden bg-background">
@@ -13,15 +9,16 @@ export function Hero() {
 					{/* Left Content */}
 					<div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left justify-center md:pr-4 lg:pr-8">
 						<p className="text-gray-500 font-semibold text-sm sm:text-base">
-							CALIFORNIA LICENSED ENGINEERING & DESIGN
+							Your Local Design & Engineering Experts
 						</p>
 						<h1 className="text-4xl sm:text-5xl xl:text-6xl font-bold leading-tight sm:leading-snug lg:leading-tight mt-3 sm:mt-4">
-							Your Local Design & Engineering Experts
+							California Licensed Design & Engineering Experts
 						</h1>
 						<p className="mt-4 sm:mt-6 lg:mt-8 text-base sm:text-lg lg:text-xl text-gray-500 max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl leading-relaxed">
-							Transform your space with our professional architectural and
-							structural engineering services. We handle permits, plans, and
-							design while you watch your vision become reality.
+							California&apos;s licensed architectural and structural
+							engineering experts with 20+ years of experience. We handle
+							designs, permits, and construction plans with a 95% approval rate.
+							Transform your vision into reality.
 						</p>
 						<div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4">
 							<ContactButton buttonText="Get A Free Consultation" />
@@ -32,7 +29,7 @@ export function Hero() {
 					<div className="w-full md:w-1/2 flex items-center justify-center">
 						<div className="relative w-full h-0 pb-[75%] overflow-hidden rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
 							<Image
-								src={heroImage}
+								src="/images/home/hero-image.jpg"
 								alt="Professional Home Design"
 								fill
 								sizes="(max-width: 768px) 100vw, 50vw"

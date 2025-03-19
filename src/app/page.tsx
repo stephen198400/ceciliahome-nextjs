@@ -14,7 +14,7 @@ import Script from 'next/script';
 export const metadata = {
 	title: 'California Architectural & Structural Design | Permit Services',
 	description:
-		'Expert architectural design and permit services in California. Specializing in ADUs, home additions, remodeling, and structural engineering for residential and commercial projects. Free consultation.',
+		"California's trusted architectural & structural experts. Specializing in ADUs, remodeling, additions & permits for residential projects. Free consultation.",
 	keywords: [
 		'california architectural design',
 		'ADU Design California',

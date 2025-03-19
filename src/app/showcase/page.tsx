@@ -9,7 +9,7 @@ export const metadata = {
 	title:
 		'Completed Projects Gallery | California Architectural Design Portfolio',
 	description:
-		'View our successful California architectural projects including ADUs, home additions, renovations, and structural solutions. Browse our portfolio showcasing beautiful designs, permits approved, and client transformations.',
+		'Explore our California architectural portfolio: ADUs, additions, renovations & structural solutions. See stunning designs, approved permits & client transformations.',
 	keywords: [
 		'architectural project portfolio',
 		'California building projects',
@@ -30,7 +30,7 @@ export const metadata = {
 			'Explore our showcase of completed architectural projects throughout California. See real-world examples of our award-winning designs, renovations, ADUs and structural solutions.',
 		images: [
 			{
-				url: 'https://www.ceciliahome.design/images/portfolio-showcase.jpg', // 更新为展示作品的图片
+				url: 'https://www.cecilia123.com/images/portfolio-showcase.jpg', // 更新为展示作品的图片
 				width: 1200,
 				height: 630,
 				alt: 'Featured Architectural Projects in California',
@@ -46,10 +46,10 @@ export const metadata = {
 		title: 'Inspiring Architectural Portfolio | California Design Projects',
 		description:
 			'Browse our portfolio of successful architectural and structural projects across California. From ADUs to commercial spaces.',
-		images: ['https://www.ceciliahome.design/images/portfolio-showcase.jpg'], // 保持与OG图片一致
+		images: ['https://www.cecilia123.com/images/portfolio-showcase.jpg'], // 保持与OG图片一致
 	},
 	alternates: {
-		canonical: 'https://www.ceciliahome.design/showcase', // 更新为正确的作品集页面URL
+		canonical: 'https://www.cecilia123.com/showcase', // 更新为正确的作品集页面URL
 	},
 };
 
@@ -57,8 +57,8 @@ export default function ShowcasesPage() {
 	return (
 		<div>
 			<Script {...getJsonLdScript('showcase')} />
-			<section className="min-h-screen bg-background">
-				<div className="container mx-auto px-4 py-16 md:py-24">
+			<section className="min-h-screen py-16 md:py-20 bg-background">
+				<div className="container mx-auto ">
 					<div className="mb-12">
 						<h1 className="text-5xl md:text-6xl font-bold mb-4">
 							Project Showcases

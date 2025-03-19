@@ -142,7 +142,7 @@ export const metadata = {
 	openGraph: {
 		title: 'California ADU Design & Plans | Accessory Dwelling Units Experts',
 		description:
-			'Complete ADU solutions from planning to permits. Get custom designs, pre-approved plans, and expert guidance on California accessory dwelling units. Free consultation on costs and regulations.',
+			'California ADU experts: custom designs to permit approval. Get pre-approved plans, cost guidance & regulatory support for accessory dwelling units. Free consultation',
 		images: [
 			{
 				url: 'https://www.cecilia123.com/images/adu-showcase.jpg',
@@ -206,18 +206,7 @@ const questions: QuestionType[] = [
 const testimonials: TestimonialType[] = [
 	{
 		content:
-			'Cecilia Home transformed our outdated kitchen into a modern masterpiece. Their attention to detail in the design and construction process was exceptional. The team was professional and completed the project ahead of schedule!',
-		rating: 4.9,
-		author: {
-			name: 'Sarah Chen',
-			city: 'San Francisco',
-			company: 'Homeowner',
-			image: 'https://images.unsplash.com/photo-1573496358961-3c82861ab8f4',
-		},
-	},
-	{
-		content:
-			'Working with Mason on our ADU project was a fantastic experience. Their expertise in navigating permits and designing a space that perfectly complemented our main house was invaluable. The final result exceeded our expectations!',
+			'Working with Mason on our ADU project was truly transformative. His expertise in California ADU regulations and Cecilia Home&apos;s detailed design process resulted in a perfect space that maximizes our property value. Their ability to navigate the complex permit process saved us countless hours and potential headaches.',
 		rating: 5.0,
 		author: {
 			name: 'Michael Rodriguez',
@@ -228,62 +217,72 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'The Cecilia Home team helped us design and build a beautiful deck that completely transformed our outdoor living space. Their knowledge of local building codes and attention to structural integrity was impressive.',
-		rating: 4.7,
-		author: {
-			name: 'Jennifer Park',
-			city: 'San Jose',
-			company: 'Homeowner',
-			image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb',
-		},
-	},
-	{
-		content:
-			'After the wildfire damage, Cecilia Home was instrumental in rebuilding our home. Their team handled everything from structural assessment to final touches, making a difficult time much easier for our family.',
-		rating: 4.8,
-		author: {
-			name: 'David Thompson',
-			city: 'Mountain View',
-			company: 'Homeowner',
-			image: 'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f',
-		},
-	},
-	{
-		content:
-			'The foundation repair work by Cecilia Home was thorough and professional. They explained every step of the process and completed the work with minimal disruption to our daily life. Highly recommend their expertise!',
-		rating: 4.6,
-		author: {
-			name: 'Lisa Wong',
-			city: 'Berkeley',
-			company: 'Property Owner',
-			image: 'https://images.unsplash.com/photo-1526413232644-8a40f03cc03b',
-		},
-	},
-	{
-		content:
-			'Mason and the Cecilia Home team designed a perfect commercial space for our restaurant. Their understanding of both aesthetic appeal and functional requirements was exactly what we needed. Outstanding service!',
+			'Cecilia Home designed our backyard ADU with remarkable attention to detail. From the initial consultation to final inspection, Mason and his team were professional and thorough. Our 600 sq ft ADU now serves as a beautiful home office and guest suite that perfectly complements our main residence.',
 		rating: 4.9,
 		author: {
-			name: 'Robert Kim',
-			city: 'Cupertino',
-			company: 'Restaurant Owner',
-			image: 'https://images.unsplash.com/photo-1474176857210-7287d38d27c6',
+			name: 'Emily Chen',
+			city: 'Fremont',
+			company: 'Homeowner',
+			image: 'https://images.unsplash.com/photo-1548142813-c348350df52b',
+		},
+	},
+	{
+		content:
+			'As a first-time ADU investor, I was nervous about the process. Mason at Cecilia Home walked me through every step, from ADU site placement to maximizing rental potential. Their 3D renderings helped me visualize the final product before breaking ground. The finished ADU now generates substantial rental income.',
+		rating: 4.8,
+		author: {
+			name: 'James Wilson',
+			city: 'San Jose',
+			company: 'Investment Property Owner',
+			image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e',
+		},
+	},
+	{
+		content:
+			"We needed an ADU for my aging parents that was both accessible and beautiful. Cecilia Home delivered beyond our expectations. Their expertise in California ADU regulations allowed for maximum square footage while Mason's design incorporated subtle accessibility features that don't look institutional. The ADU feels like a natural extension of our home.",
+		rating: 5.0,
+		author: {
+			name: 'Sophia Martinez',
+			city: 'Berkeley',
+			company: 'Family Homeowner',
+			image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2',
+		},
+	},
+	{
+		content:
+			'Converting our garage into an ADU seemed impossible until we consulted with Mason at Cecilia Home. Their creative approach to California ADU conversions maximized our limited space while maintaining parking. The permitting process was handled entirely by their team, making what could have been stressful completely seamless.',
+		rating: 4.7,
+		author: {
+			name: 'Daniel Park',
+			city: 'Oakland',
+			company: 'Urban Homeowner',
+			image: 'https://images.unsplash.com/photo-1542909168-82c3e7fdca5c',
+		},
+	},
+	{
+		content:
+			"Our hillside property presented unique challenges for ADU construction. Cecilia Home's structural expertise made our dream ADU possible. Mason's innovative design integrated the ADU beautifully with the natural landscape while ensuring structural integrity. The finished ADU has become the highlight of our property - guests can't believe the views!",
+		rating: 4.9,
+		author: {
+			name: 'Rebecca Johnson',
+			city: 'Mill Valley',
+			company: 'Luxury Property Owner',
+			image: 'https://images.unsplash.com/photo-1554151228-14d9def656e4',
 		},
 	},
 ];
-
 /* ---------------------------------------------- Page --------------------------------------------- */
 export default function ADUsPage() {
 	return (
 		<div>
 			<Script {...getJsonLdScript('services-adus')} />
 			<ServiceHero
-				smallText="CALIFORNIA ADU DESIGN & ENGINEERING"
-				title="Your Trusted ADU Design Experts"
+				smallText="Your Local Design & Engineering Experts"
+				title="California Expert ADU Design And Engineering"
 				description="Expand your living space with our specialized ADU design and
 							engineering services in California. We manage permits, plans, and
 							construction to bring your ADU vision to life."
-				image="https://images.unsplash.com/photo-1631215320889-7cf5eb3224f8?auto=format&fit=crop&q=80&w=1200&h=800"
+				image="/images/home/adu-design.jpg"
 			/>
 			<States />
 

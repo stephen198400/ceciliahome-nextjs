@@ -66,14 +66,14 @@ export const Trust = () => {
 	const duplicatedImages = [...collaborationImages, ...collaborationImages];
 
 	return (
-		<section className="md:py-16 py-6 bg-background overflow-hidden">
+		<section className="py-16 md:py-20 bg-background overflow-hidden">
 			<div className="px-6 md:px-10 max-w-[100vw]">
 				<div className="text-center mb-12 max-w-4xl mx-auto">
 					<h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
 						We are your trusted design and engineering experts.
 					</h1>
 					<p className="text-xl text-gray-600">
-						Since 2010, Cecilia Home has delivered premium architectural design
+						Since 2019, Cecilia Home has delivered premium architectural design
 						and construction solution across California. Our collaborative
 						approach combines technical expertise with personalized attention,
 						ensuring each project reflects your unique vision and exceeds your

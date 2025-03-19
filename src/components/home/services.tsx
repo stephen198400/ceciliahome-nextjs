@@ -8,58 +8,52 @@ const features = [
 		title: 'ADU Design',
 		description:
 			'Custom Accessory Dwelling Unit designs that maximize your property value while maintaining aesthetic harmony.',
-		image:
-			'https://images.unsplash.com/photo-1504297050568-910d24c426d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBpbnRlcmlvciUyMGRlc2lnbiUyMG9mZmljZXxlbnwwfHx8fDE3NDE3NjYxMTF8MA&ixlib=rb-4.0.3&q=80&w=1080',
+		image: '/images/home/adu-design.jpg',
 		href: '/services/adu-design',
-	},
-	{
-		title: 'Foundation Assessment',
-		description:
-			"Comprehensive evaluation and repair solutions ensuring your property's structural integrity.",
-		image:
-			'https://images.unsplash.com/photo-1525896544042-354764aa27e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBpbnRlcmlvciUyMGRlc2lnbiUyMG9mZmljZXxlbnwwfHx8fDE3NDE3NjYxMTF8MA&ixlib=rb-4.0.3&q=80&w=1080',
-		href: '/services/foundation',
-	},
-	{
-		title: 'Interior Remodeling',
-		description:
-			'Transform your living spaces with our comprehensive interior renovation services.',
-		image:
-			'https://images.unsplash.com/photo-1524758631624-e2822e304c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBpbnRlcmlvciUyMGRlc2lnbiUyMG9mZmljZXxlbnwwfHx8fDE3NDE3NjYxMTF8MA&ixlib=rb-4.0.3&q=80&w=1080',
-		href: '/services/remodeling',
 	},
 	{
 		title: 'Commercial Design',
 		description:
-			'Create inspiring commercial spaces that enhance productivity and reflect your brand identity.',
-		image:
-			'https://images.unsplash.com/photo-1583329550487-0fa300a4cd1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBpbnRlcmlvciUyMGRlc2lnbiUyMG9mZmljZXxlbnwwfHx8fDE3NDE3NjYxMTF8MA&ixlib=rb-4.0.3&q=80&w=1080',
+			'Create inviting restaurants, massage shops, and retail spaces that elevate your business brand.',
+		image: '/images/home/commercial-design.jpg',
 		href: '/services/commercial',
+	},
+	{
+		title: 'Interior Remodeling',
+		description:
+			'Transform your home with expert kitchen, bathroom, and living room remodeling.',
+		image: '/images/home/interior-remodeling.jpg',
+		href: '/services/remodeling',
 	},
 	{
 		title: 'Wildfire Reconstruction',
 		description:
-			'Specialized reconstruction services incorporating resilient design principles.',
-		image:
-			'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBpbnRlcmlvciUyMGRlc2lnbiUyMG9mZmljZXxlbnwwfHx8fDE3NDE3NjYxMTF8MA&ixlib=rb-4.0.3&q=80&w=1080',
+			'Professional structural assessment and complete rebuilding design for wildfire-damaged properties.',
+		image: '/images/home/wildfire-reconstruction.webp',
 		href: '/services/wildfire',
 	},
 	{
-		title: 'Permit Services',
+		title: 'Permit Application Services',
 		description:
-			'Expert assistance with building permits and regulatory compliance for your projects.',
-		image:
-			'https://images.unsplash.com/photo-1497366754035-f200968a6e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBpbnRlcmlvciUyMGRlc2lnbiUyMG9mZmljZXxlbnwwfHx8fDE3NDE3NjYxMTF8MA&ixlib=rb-4.0.3&q=80&w=1080',
+			'Secure your building permits with our 100% approval rate and complete regulatory compliance guidance.',
+		image: '/images/home/permit-services.jpg',
 		href: '/services/permits',
+	},
+	{
+		title: 'Foundation Inspection',
+		description:
+			'Expert foundation inspection with detailed structural reports to ensure safety and long-term stability.',
+		image: '/images/home/foundation-inspection.webp',
+		href: '/services/foundation',
 	},
 ];
 
 export default function ServiceB() {
 	return (
-		<section className="py-24 bg-[#FFFDF7] ">
+		<section className="py-16 md:py-20 bg-secondary-background ">
 			<div className="container mx-auto px-4 max-w-[1440px]">
-				<div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-					<h2 className="text-4xl md:text-5xl font-bold">
+				<div className="text-center max-w-3xl mx-auto mb-16 ">
+					<h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
 						Our range of services
 					</h2>
 					<p className="text-gray-600 text-lg">

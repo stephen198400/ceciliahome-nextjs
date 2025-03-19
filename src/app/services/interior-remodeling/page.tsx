@@ -212,10 +212,10 @@ const questions: QuestionType[] = [
 const testimonials: TestimonialType[] = [
 	{
 		content:
-			'Cecilia Home transformed our outdated kitchen into a modern masterpiece. Their attention to detail in the design and construction process was exceptional. The team was professional and completed the project ahead of schedule!',
+			"Cecilia Home transformed our outdated kitchen into a modern masterpiece. Mason personally oversaw the design process, ensuring every detail was perfect. The kitchen remodeling team was professional and completed the project ahead of schedule, giving us the culinary space we've always dreamed of!",
 		rating: 4.9,
 		author: {
-			name: 'Sarah Chen',
+			name: 'Emma Chen',
 			city: 'San Francisco',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1573496358961-3c82861ab8f4',
@@ -223,10 +223,10 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"Our bathroom renovation exceeded all expectations. The team at Cecilia Home guided us through every step, from design to material selection. The craftsmanship is outstanding, and we now have the spa-like bathroom we've always dreamed of!",
+			"Our master bath renovation with Cecilia Home exceeded all expectations. Mason's design suggestions modernized our space while maintaining the character of our older home. Their attention to bathroom tile selection and fixture placement created the spa-like bath retreat we've always wanted. Worth every penny!",
 		rating: 5.0,
 		author: {
-			name: 'Michael Rodriguez',
+			name: 'Thomas Rodriguez',
 			city: 'Palo Alto',
 			company: 'Property Owner',
 			image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
@@ -234,10 +234,10 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'The living room redesign by Cecilia Home completely transformed how we use our space. Their vision for opening up the area and improving flow between rooms made our home feel entirely new. Their attention to detail is remarkable.',
+			'The living room redesign by Cecilia Home completely transformed how we entertain. Mason suggested removing a non-load bearing wall to create an open concept between our living area and kitchen. Their interior remodeling expertise made our home feel entirely new while staying within our budget.',
 		rating: 4.7,
 		author: {
-			name: 'Jennifer Park',
+			name: 'Olivia Park',
 			city: 'San Jose',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb',
@@ -245,10 +245,10 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'We hired Cecilia Home for a complete kitchen remodel, and they delivered beyond our expectations. From the initial design concepts to the final installation, every step was handled with professionalism and expertise. Our kitchen is now the heart of our home!',
+			'Mason and the Cecilia Home team completed our kitchen remodel with exceptional attention to detail. From custom cabinetry to the perfect kitchen island layout, every aspect was thoughtfully designed. Their project management made what could have been a stressful kitchen renovation into a smooth, enjoyable process!',
 		rating: 4.8,
 		author: {
-			name: 'David Thompson',
+			name: 'James Thompson',
 			city: 'Mountain View',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f',
@@ -256,10 +256,10 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'The master bathroom renovation by Cecilia Home was flawless. They worked within our budget while still delivering a luxury feel. The project management was excellent, with minimal disruption to our daily lives during construction.',
-		rating: 4.6,
+			"Our sunroom addition by Cecilia Home has become our favorite space in the house. Mason designed a sunroom that maximizes natural light while maintaining energy efficiency. The construction team's skilled craftsmanship ensured every detail was perfect, from the custom windows to the heated flooring.",
+		rating: 4.9,
 		author: {
-			name: 'Lisa Wong',
+			name: 'Sophia Wong',
 			city: 'Berkeley',
 			company: 'Property Owner',
 			image: 'https://images.unsplash.com/photo-1526413232644-8a40f03cc03b',
@@ -267,10 +267,10 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"Our whole-home interior remodel with Cecilia Home was a fantastic experience. Their designers created a cohesive flow throughout our house, and the construction team's craftsmanship was impeccable. We'd recommend them without hesitation!",
+			"Cecilia Home's bath and kitchen renovation completely transformed our 1980s home. Mason's eye for design created a cohesive flow between spaces, and their construction team's expertise with plumbing and electrical work was impressive. Our new bath features a walk-in shower that feels like a luxury hotel!",
 		rating: 4.9,
 		author: {
-			name: 'Robert Kim',
+			name: 'Daniel Kim',
 			city: 'Cupertino',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1474176857210-7287d38d27c6',
@@ -284,10 +284,10 @@ export default function InteriorRemodelPage() {
 		<div>
 			<Script {...getJsonLdScript('services-interior-remodeling')} />
 			<ServiceHero
-				smallText="CALIFORNIA INTERIOR REMODELING SPECIALISTS"
-				title="Transform Your Living Spaces"
+				smallText="Your Local Interior Remodeling Experts"
+				title="California Interior Remodeling Experts"
 				description="Expert kitchen, bathroom, and living room remodeling services in California. We bring your vision to life with premium materials, skilled craftsmanship, and meticulous attention to detail."
-				image="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80&w=1200&h=800"
+				image="/images/home/interior-remodeling.jpg"
 			/>
 			<States />
 

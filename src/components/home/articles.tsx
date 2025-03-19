@@ -77,7 +77,7 @@ const articles: Article[] = [
 
 export function Articles() {
 	return (
-		<section className="py-16 bg-background">
+		<section className="py-16 md:py-20 bg-background">
 			<div className="container mx-auto px-4">
 				<h2 className="text-3xl md:text-4xl font-bold mb-12">Latest news</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -222,10 +222,10 @@ const questions: QuestionType[] = [
 const testimonials: TestimonialType[] = [
 	{
 		content:
-			'Cecilia Home transformed our single-story home with a beautifully designed second floor addition. Their architects created a seamless design that looks like it was always part of our home, and their engineers ensured everything was structurally sound. The new space has completely changed how we live!',
+			'Cecilia Home transformed our single-story home with a beautifully designed second floor addition. Mason personally oversaw the architectural planning, creating a seamless design that looks like it was always part of our home. Their home addition specialists ensured everything was structurally sound while maximizing our budget. The new space has completely changed how our family lives!',
 		rating: 5.0,
 		author: {
-			name: 'Sarah Chen',
+			name: 'Sophia Chen',
 			city: 'San Francisco',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1573496358961-3c82861ab8f4',
@@ -233,7 +233,7 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'We hired Cecilia Home to design and build a master suite addition, and they exceeded all expectations. From the initial design phase through construction, their team was professional, responsive, and detail-oriented. Our new master bedroom and bathroom feel luxurious and have added significant value to our home.',
+			"We hired Cecilia Home to design and build a master suite addition, and they exceeded all expectations. Mason's architectural vision created a space that perfectly balanced luxury with practicality. Their home addition team managed every aspect from foundation to finishing touches with remarkable precision. Our new master bedroom and bathroom have added significant value to our property.",
 		rating: 4.9,
 		author: {
 			name: 'Michael Rodriguez',
@@ -244,7 +244,7 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"The kitchen and family room addition Cecilia Home designed for us completely transformed our home. Their team seamlessly blended the new construction with our existing house, creating an open, light-filled space that's now the heart of our home. Their permit expertise saved us countless headaches!",
+			"The kitchen and family room addition Mason designed for our California home completely transformed our living space. Cecilia Home's team seamlessly integrated the new construction with our existing house, creating an open, light-filled area that's now our favorite gathering place. Their expertise with home addition permits saved us countless headaches with local building authorities!",
 		rating: 4.8,
 		author: {
 			name: 'Jennifer Park',
@@ -255,10 +255,10 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"Our second story addition was a complex project, but Cecilia Home's expertise made it smooth and stress-free. Their structural engineers designed a solution that minimized disruption to our first floor, and the construction team's attention to detail was impressive. We now have double the square footage and amazing views!",
+			'Our complex second story home addition was handled masterfully by Mason and the Cecilia Home team. Their structural engineers designed a solution that minimized disruption to our first floor during construction. Their home addition specialists coordinated everything from structural support to roof matching. We now have double the square footage with stunning Bay Area views!',
 		rating: 4.8,
 		author: {
-			name: 'David Thompson',
+			name: 'Andrew Thompson',
 			city: 'Mountain View',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f',
@@ -266,7 +266,7 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"The in-law suite Cecilia Home added to our property is perfect for our aging parents. They thoughtfully designed the space for accessibility while ensuring it complements our home's architecture. The separate entrance gives everyone privacy, and the quality of construction is outstanding.",
+			"The in-law suite home addition Cecilia Home created for our property is perfect for our aging parents. Mason thoughtfully designed the space for accessibility while ensuring it complements our home's architecture. Their home addition expertise allowed for a separate entrance that gives everyone privacy, while still feeling connected to the main house. The quality of construction is outstanding.",
 		rating: 4.7,
 		author: {
 			name: 'Lisa Wong',
@@ -277,27 +277,26 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'Our home addition project with Cecilia Home was an excellent investment. Their team helped us maximize our budget to gain the most usable square footage, and their design seamlessly integrated with our existing home. Their knowledge of California building codes and permit processes was invaluable.',
+			'Our 800 sq ft home addition project with Mason at Cecilia Home was an excellent investment. Their team helped us design a two-story addition that maximized our narrow lot and seamlessly integrated with our existing California bungalow. Their knowledge of local building codes and home addition permit processes made what could have been a stressful project actually enjoyable.',
 		rating: 4.9,
 		author: {
-			name: 'Robert Kim',
+			name: 'Daniel Kim',
 			city: 'Cupertino',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1474176857210-7287d38d27c6',
 		},
 	},
 ];
-
 /* ---------------------------------------------- Page --------------------------------------------- */
 export default function HomeAdditionPage() {
 	return (
 		<div>
 			<Script {...getJsonLdScript('services-home-addition')} />
 			<ServiceHero
-				smallText="CALIFORNIA HOME ADDITION SPECIALISTS"
+				smallText="Your Local Home Addition Experts"
 				title="Expand Your Living Space with Expert Home & Room Additions"
 				description="Professional home addition services throughout California. From second story additions to master suite extensions, we design and build beautiful, functional spaces that enhance your lifestyle and increase your property value."
-				image="https://images.unsplash.com/photo-1511452885600-a3d2c9148a31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHwxfHxob3VzZSUyMGV4dGVuc2lvbiUyMG1vZGVybiUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDIzMDI5MTl8MA&ixlib=rb-4.0.3&q=80&w=1200&h=800"
+				image="/images/home/home-addition.png"
 			/>
 			<States />
 

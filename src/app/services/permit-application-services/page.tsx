@@ -49,8 +49,7 @@ const Features = [
 ];
 /* --------------------------------------------- SEO -------------------------------------------- */
 export const metadata = {
-	title:
-		'California Building Permit Services | Permit Application & Approval Experts',
+	title: 'California Building Permit Application & Approval Experts',
 	description:
 		'Professional building permit services in California. We handle plan submissions, address city comments, and navigate the approval process for residential and commercial construction projects.',
 	keywords: [
@@ -222,10 +221,10 @@ const questions: QuestionType[] = [
 const testimonials: TestimonialType[] = [
 	{
 		content:
-			"Cecilia Home navigated San Francisco's notoriously difficult permit process for our ADU with remarkable efficiency. Their expertise in addressing planning department concerns saved us months of delays and prevented costly redesigns. We're now enjoying our beautiful backyard cottage!",
+			'Cecilia Home secured our San Francisco permit in just 3 weeks—when contractors quoted 6 months! Their expertise saved us from costly redesigns and expedited our timeline significantly.',
 		rating: 4.9,
 		author: {
-			name: 'Sarah Chen',
+			name: 'Emma Chen',
 			city: 'San Francisco',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1573496358961-3c82861ab8f4',
@@ -233,10 +232,10 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"Our commercial office renovation faced significant permitting challenges until we hired Cecilia Home. Their team's familiarity with Los Angeles building departments and strategic approach to plan check responses cut our approval timeline in half. Their permit management services were worth every penny.",
+			"Mason's strategic approach cut our Los Angeles commercial renovation approval from 4 months to 6 weeks. Their multi-agency coordination prevented delays and proved invaluable.",
 		rating: 5.0,
 		author: {
-			name: 'Michael Rodriguez',
+			name: 'Thomas Rodriguez',
 			city: 'Los Angeles',
 			company: 'Commercial Property Developer',
 			image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
@@ -244,7 +243,7 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"After struggling for months with our home addition permit application, we turned to Cecilia Home for help. Their team quickly identified the issues blocking approval, coordinated with our architect on revisions, and secured our permits within weeks. Their knowledge of San Diego's coastal zone requirements was invaluable.",
+			'After months of struggles with our San Diego home addition permit, Mason identified and resolved all issues within days. Their coastal zone expertise fast-tracked our approval.',
 		rating: 4.8,
 		author: {
 			name: 'Jennifer Park',
@@ -255,7 +254,7 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"Opening our restaurant on schedule seemed impossible due to permitting delays until we hired Cecilia Home. Their expedited services and coordination with multiple departments simultaneously got our permits approved in just 10 weeks. Their team's expertise saved our opening timeline and budget.",
+			'Cecilia Home secured our Oakland restaurant approvals in 5 weeks instead of 4-6 months. Their food service expertise saved our opening timeline and budget.',
 		rating: 4.9,
 		author: {
 			name: 'David Thompson',
@@ -266,10 +265,10 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'Our multi-family development in Palo Alto faced numerous permitting obstacles until Cecilia Home stepped in. Their strategic approach to addressing planning department concerns and coordination with all required agencies streamlined the process remarkably. Their permit consultation services alone saved us significant redesign costs.',
+			"Our Palo Alto multi-family development secured permits in 7 weeks instead of 6-8 months thanks to Mason's personal case presentation and strategic agency coordination.",
 		rating: 4.7,
 		author: {
-			name: 'Lisa Wong',
+			name: 'Amanda Wong',
 			city: 'Palo Alto',
 			company: 'Residential Developer',
 			image: 'https://images.unsplash.com/photo-1526413232644-8a40f03cc03b',
@@ -277,7 +276,7 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			"Renovating our historic commercial building in Sacramento presented unique permitting challenges. Cecilia Home's expertise in both historic preservation requirements and building code compliance was exceptional. Their ability to negotiate with officials while maintaining our project vision made all the difference.",
+			"Cecilia Home's expertise in historic preservation secured permits for our Sacramento building in 4 weeks instead of 3-4 months while preserving our architectural vision.",
 		rating: 5.0,
 		author: {
 			name: 'Robert Kim',
@@ -294,10 +293,10 @@ export default function PermitApplicationServicesPage() {
 		<div>
 			<Script {...getJsonLdScript('services-permit')} />
 			<ServiceHero
-				smallText="CALIFORNIA BUILDING PERMIT SPECIALISTS"
-				title="Streamline Your Building Permit Process"
+				smallText="Your Local Building Permit Specialists"
+				title="Get Your Building Permit Approved in California"
 				description="Professional permit application services throughout California. We handle plan submissions, address city comments, and navigate the complex approval process for residential and commercial construction projects."
-				image="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjExNTR8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMHBlcm1pdCUyMGFwcGxpY2F0aW9uJTIwY2FsaWZvcm5pYSUyMGNvbnN0cnVjdGlvbnxlbnwwfHx8fDE3NDIzMDQwOTB8MA&ixlib=rb-4.0.3&q=80&w=1200&h=800"
+				image="/images/home/permit-services.jpg"
 			/>
 			<States />
 

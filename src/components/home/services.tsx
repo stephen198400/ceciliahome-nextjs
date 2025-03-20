@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const features = [
 	{
@@ -65,10 +64,9 @@ export default function ServiceB() {
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
 					{features.map((feature) => (
-						<Link
+						<div
 							key={feature.title}
-							href={feature.href}
-							className="group space-y-4 block"
+							className="group space-y-4 block cursor-pointer"
 						>
 							<div className="relative h-80 overflow-hidden rounded-2xl">
 								<Image
@@ -88,21 +86,18 @@ export default function ServiceB() {
 									{feature.description}
 								</p>
 							</div>
-						</Link>
+						</div>
 					))}
 				</div>
 
 				<div className="mt-16 text-center">
 					<Button
-						asChild
 						variant="default"
 						size="lg"
-						className="group rounded bg-button-background py-6 text-md"
+						className="group rounded bg-button-background py-6 text-md cursor-not-allowed opacity-75"
 					>
-						<Link href="/showcase">
-							View All Services
-							<ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-						</Link>
+						View All Services
+						<ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
 					</Button>
 				</div>
 			</div>

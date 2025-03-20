@@ -30,9 +30,9 @@ export const metadata = {
 
 	// Open Graph 数据 - 优化社交媒体分享
 	openGraph: {
-		title: 'Premium Architectural Design Services in California',
+		title: 'California Architectural & Structural Design | Permit Services',
 		description:
-			'Transform your vision into reality with our expert architectural design services. From custom homes to commercial spaces across California.',
+			"California's trusted architectural & structural experts. Specializing in ADUs, remodeling, additions & permits for residential projects. Free consultation.",
 		images: [
 			{
 				url: 'https://www.ceciliahome.design/images/homepage-showcase.jpg',

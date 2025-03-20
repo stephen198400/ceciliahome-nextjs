@@ -1,8 +1,8 @@
 import Footer from '@/components/common/footer';
 import { Nav } from '@/components/common/nav';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-
 const geistSans = Geist({
 	variable: '--font-geist-sans',
 	subsets: ['latin'],
@@ -54,6 +54,7 @@ export default function RootLayout({
 				<Nav />
 				<main className="">{children}</main>
 				<Footer />
+				<SpeedInsights />
 			</body>
 		</html>
 	);

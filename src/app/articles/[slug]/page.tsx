@@ -4,11 +4,10 @@ import { serializeMDX } from '@/lib/mdx';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-interface PageProps {
-	params: {
-		slug: string;
-	};
-}
+// 符合Next.js 15.2.2要求的参数类型
+type PageProps = {
+	params: Promise<{ slug: string }>;
+};
 
 // 为了静态生成，提供所有可能的路径
 export async function generateStaticParams() {
@@ -20,8 +19,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
 	params,
 }: PageProps): Promise<Metadata> {
-	// 确保params是完全解析的
-	const resolvedParams = await Promise.resolve(params);
+	const resolvedParams = await params;
 	const article = await getArticleBySlug(resolvedParams.slug);
 
 	if (!article) {
@@ -34,8 +32,7 @@ export async function generateMetadata({
 }
 
 export default async function ArticlePage({ params }: PageProps) {
-	// 确保params是完全解析的
-	const resolvedParams = await Promise.resolve(params);
+	const resolvedParams = await params;
 	const article = await getArticleBySlug(resolvedParams.slug);
 
 	if (!article) {

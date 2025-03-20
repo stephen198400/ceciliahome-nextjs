@@ -128,6 +128,13 @@ export function Nav() {
 									</NavigationMenuLink>
 								</Link>
 							</NavigationMenuItem>
+							<NavigationMenuItem>
+								<Link href="/articles" legacyBehavior passHref>
+									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
+										Articles
+									</NavigationMenuLink>
+								</Link>
+							</NavigationMenuItem>
 						</NavigationMenuList>
 					</NavigationMenu>
 				</div>
@@ -224,6 +231,13 @@ export function Nav() {
 							onClick={() => setMobileMenuOpen(false)}
 						>
 							Showcase
+						</Link>
+						<Link
+							href="/articles"
+							className="text-lg font-medium transition-colors hover:text-primary py-2 border-b border-muted"
+							onClick={() => setMobileMenuOpen(false)}
+						>
+							Articles
 						</Link>
 
 						<div className="pt-2">

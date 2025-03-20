@@ -22,10 +22,10 @@ const testimonials: TestimonialType[] = [
 			'Cecilia Home transformed our outdated kitchen into a modern masterpiece. Their attention to detail in the design and construction process was exceptional. The team was professional and completed the project ahead of schedule!',
 		rating: 4.9,
 		author: {
-			name: 'Sarah Chen',
+			name: 'Emily Zhang',
 			city: 'San Francisco',
 			company: 'Homeowner',
-			image: 'https://images.unsplash.com/photo-1573496358961-3c82861ab8f4',
+			image: '/images/home/testimonials/emily-zhang.png',
 		},
 	},
 	{
@@ -33,10 +33,10 @@ const testimonials: TestimonialType[] = [
 			'Working with Mason on our ADU project was a fantastic experience. Their expertise in navigating permits and designing a space that perfectly complemented our main house was invaluable. The final result exceeded our expectations!',
 		rating: 5.0,
 		author: {
-			name: 'Michael Rodriguez',
-			city: 'Palo Alto',
+			name: 'James Wilson',
+			city: 'Oakland',
 			company: 'Property Owner',
-			image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
+			image: '/images/home/testimonials/james-wilson.png',
 		},
 	},
 	{
@@ -44,10 +44,10 @@ const testimonials: TestimonialType[] = [
 			'The Cecilia Home team helped us design and build a beautiful deck that completely transformed our outdoor living space. Their knowledge of local building codes and attention to structural integrity was impressive.',
 		rating: 4.7,
 		author: {
-			name: 'Jennifer Park',
-			city: 'San Jose',
+			name: 'Sofia Patel',
+			city: 'Los Angeles',
 			company: 'Homeowner',
-			image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb',
+			image: '/images/home/testimonials/sofia-patel.png',
 		},
 	},
 	{
@@ -55,10 +55,10 @@ const testimonials: TestimonialType[] = [
 			'After the wildfire damage, Cecilia Home was instrumental in rebuilding our home. Their team handled everything from structural assessment to final touches, making a difficult time much easier for our family.',
 		rating: 4.8,
 		author: {
-			name: 'David Thompson',
-			city: 'Mountain View',
+			name: 'Daniel Morgan',
+			city: 'Sacramento',
 			company: 'Homeowner',
-			image: 'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f',
+			image: '/images/home/testimonials/daniel-morgan.png',
 		},
 	},
 	{
@@ -66,10 +66,10 @@ const testimonials: TestimonialType[] = [
 			'The foundation repair work by Cecilia Home was thorough and professional. They explained every step of the process and completed the work with minimal disruption to our daily life. Highly recommend their expertise!',
 		rating: 4.6,
 		author: {
-			name: 'Lisa Wong',
-			city: 'Berkeley',
+			name: 'Olivia Chen',
+			city: 'Santa Clara',
 			company: 'Property Owner',
-			image: 'https://images.unsplash.com/photo-1526413232644-8a40f03cc03b',
+			image: '/images/home/testimonials/olivia-chen.png',
 		},
 	},
 	{
@@ -77,10 +77,10 @@ const testimonials: TestimonialType[] = [
 			'Mason and the Cecilia Home team designed a perfect commercial space for our restaurant. Their understanding of both aesthetic appeal and functional requirements was exactly what we needed. Outstanding service!',
 		rating: 4.9,
 		author: {
-			name: 'Robert Kim',
-			city: 'Cupertino',
+			name: 'Thomas Lee',
+			city: 'San Jose',
 			company: 'Restaurant Owner',
-			image: 'https://images.unsplash.com/photo-1474176857210-7287d38d27c6',
+			image: '/images/home/testimonials/thomas-lee.png',
 		},
 	},
 ];

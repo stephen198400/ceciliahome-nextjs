@@ -224,7 +224,7 @@ const testimonials: TestimonialType[] = [
 			'Cecilia Home secured our San Francisco permit in just 3 weeks—when contractors quoted 6 months! Their expertise saved us from costly redesigns and expedited our timeline significantly.',
 		rating: 4.9,
 		author: {
-			name: 'Emma Chen',
+			name: 'Wei Zhang',
 			city: 'San Francisco',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1573496358961-3c82861ab8f4',
@@ -235,7 +235,7 @@ const testimonials: TestimonialType[] = [
 			"Mason's strategic approach cut our Los Angeles commercial renovation approval from 4 months to 6 weeks. Their multi-agency coordination prevented delays and proved invaluable.",
 		rating: 5.0,
 		author: {
-			name: 'Thomas Rodriguez',
+			name: 'Miguel Hernandez',
 			city: 'Los Angeles',
 			company: 'Commercial Property Developer',
 			image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
@@ -243,43 +243,43 @@ const testimonials: TestimonialType[] = [
 	},
 	{
 		content:
-			'After months of struggles with our San Diego home addition permit, Mason identified and resolved all issues within days. Their coastal zone expertise fast-tracked our approval.',
+			'After months of struggles with our home addition permit, Mason identified and resolved all issues within days. Their coastal zone expertise fast-tracked our approval.',
 		rating: 4.8,
 		author: {
-			name: 'Jennifer Park',
-			city: 'San Diego',
+			name: 'Sophia Lin',
+			city: 'Oakland',
 			company: 'Homeowner',
 			image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb',
 		},
 	},
 	{
 		content:
-			'Cecilia Home secured our Oakland restaurant approvals in 5 weeks instead of 4-6 months. Their food service expertise saved our opening timeline and budget.',
+			'Cecilia Home secured our restaurant approvals in 5 weeks instead of 4-6 months. Their food service expertise saved our opening timeline and budget.',
 		rating: 4.9,
 		author: {
-			name: 'David Thompson',
-			city: 'Oakland',
+			name: 'James Wilson',
+			city: 'Berkeley',
 			company: 'Restaurant Owner',
 			image: 'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f',
 		},
 	},
 	{
 		content:
-			"Our Palo Alto multi-family development secured permits in 7 weeks instead of 6-8 months thanks to Mason's personal case presentation and strategic agency coordination.",
+			"Our multi-family development secured permits in 7 weeks instead of 6-8 months thanks to Mason's personal case presentation and strategic agency coordination.",
 		rating: 4.7,
 		author: {
-			name: 'Amanda Wong',
-			city: 'Palo Alto',
+			name: 'Aisha Johnson',
+			city: 'San Jose',
 			company: 'Residential Developer',
 			image: 'https://images.unsplash.com/photo-1526413232644-8a40f03cc03b',
 		},
 	},
 	{
 		content:
-			"Cecilia Home's expertise in historic preservation secured permits for our Sacramento building in 4 weeks instead of 3-4 months while preserving our architectural vision.",
+			"Cecilia Home's expertise in historic preservation secured permits for our building in 4 weeks instead of 3-4 months while preserving our architectural vision.",
 		rating: 5.0,
 		author: {
-			name: 'Robert Kim',
+			name: 'David Chen',
 			city: 'Sacramento',
 			company: 'Property Investor',
 			image: 'https://images.unsplash.com/photo-1474176857210-7287d38d27c6',

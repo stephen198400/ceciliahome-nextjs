@@ -131,7 +131,7 @@ function AnimatedCounter({
 
 const AboutStates = () => {
 	return (
-		<section className="py-16 md:py-24 bg-[#f8f5ee]">
+		<section className="py-16 md:py-24 bg-secondary-background">
 			<div className="container mx-auto px-6 md:px-10">
 				<div className="mb-16 max-w-3xl">
 					<h2 className=" text-gray-500 text-xl font-semibold mb-2">

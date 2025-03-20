@@ -10,10 +10,10 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
+import { useForm, ValidationError } from '@formspree/react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Loader2 } from 'lucide-react';
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm as useReactHookForm } from 'react-hook-form';
 import { z } from 'zod';
 import { Button } from '../ui/button';
 import {
@@ -25,11 +25,22 @@ import {
 	DialogTrigger,
 } from '../ui/dialog';
 
+// TODO: 后续添加reCAPTCHA支持
+// declare global {
+// 	interface Window {
+// 		grecaptcha: {
+// 			ready: (callback: () => void) => void;
+// 			execute: (siteKey: string, options: { action: string }) => Promise<string>;
+// 		};
+// 	}
+// }
+
 interface ContactButtonProps {
 	className?: string;
 	buttonText?: string;
 	icon?: React.ReactNode;
 }
+
 // 定义美国电话号码验证正则表达式
 const usPhoneRegex =
 	/^(\+1|1)?[-.\s]?\(?(\d{3})\)?[-.\s]?(\d{3})[-.\s]?(\d{4})$/;
@@ -53,11 +64,11 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 function ContactForm() {
-	const [isSubmitting, setIsSubmitting] = useState(false);
-	const [isSuccess, setIsSuccess] = useState(false);
+	// Formspree 表单初始化 - 替换为您的表单ID
+	const [formspreeState, handleFormspreeSubmit] = useForm('xbldaqak');
 
-	// 初始化表单
-	const form = useForm<FormValues>({
+	// React Hook Form 用于表单验证
+	const form = useReactHookForm<FormValues>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
 			name: '',
@@ -69,31 +80,8 @@ function ContactForm() {
 		},
 	});
 
-	// 表单提交处理
-	const onSubmit = async (data: FormValues) => {
-		setIsSubmitting(true);
-
-		try {
-			// 这里添加实际的表单提交逻辑，例如API调用
-			console.log('Form data:', data);
-
-			// 模拟API调用延迟
-			await new Promise((resolve) => setTimeout(resolve, 1500));
-
-			setIsSuccess(true);
-			form.reset();
-
-			// 5秒后重置成功状态
-			setTimeout(() => setIsSuccess(false), 5000);
-		} catch (error) {
-			console.error('Error submitting form:', error);
-		} finally {
-			setIsSubmitting(false);
-		}
-	};
-
 	// 如果表单提交成功，显示成功消息
-	if (isSuccess) {
+	if (formspreeState.succeeded) {
 		return (
 			<div className="bg-green-50 border border-green-200 rounded-lg p-4 sm:p-6 text-center">
 				<div className="text-green-600 text-lg sm:text-xl font-semibold mb-2">
@@ -106,6 +94,12 @@ function ContactForm() {
 			</div>
 		);
 	}
+
+	// 结合 React Hook Form 和 Formspree
+	const onSubmit = async (data: FormValues) => {
+		// 提交到 Formspree
+		await handleFormspreeSubmit(data);
+	};
 
 	return (
 		<Form {...form}>
@@ -130,6 +124,11 @@ function ContactForm() {
 									/>
 								</FormControl>
 								<FormMessage className="text-xs sm:text-sm" />
+								<ValidationError
+									prefix="Name"
+									field="name"
+									errors={formspreeState.errors}
+								/>
 							</FormItem>
 						)}
 					/>
@@ -151,6 +150,11 @@ function ContactForm() {
 									/>
 								</FormControl>
 								<FormMessage className="text-xs sm:text-sm" />
+								<ValidationError
+									prefix="Email"
+									field="email"
+									errors={formspreeState.errors}
+								/>
 							</FormItem>
 						)}
 					/>
@@ -173,6 +177,11 @@ function ContactForm() {
 								/>
 							</FormControl>
 							<FormMessage className="text-xs sm:text-sm" />
+							<ValidationError
+								prefix="Phone"
+								field="phone"
+								errors={formspreeState.errors}
+							/>
 						</FormItem>
 					)}
 				/>
@@ -193,6 +202,11 @@ function ContactForm() {
 								/>
 							</FormControl>
 							<FormMessage className="text-xs sm:text-sm" />
+							<ValidationError
+								prefix="Address"
+								field="address"
+								errors={formspreeState.errors}
+							/>
 							<p className="text-xs text-muted-foreground mt-0.5">
 								Street address and city only
 							</p>
@@ -233,6 +247,11 @@ function ContactForm() {
 								</select>
 							</FormControl>
 							<FormMessage className="text-xs sm:text-sm" />
+							<ValidationError
+								prefix="Service"
+								field="service"
+								errors={formspreeState.errors}
+							/>
 						</FormItem>
 					)}
 				/>
@@ -254,6 +273,11 @@ function ContactForm() {
 								/>
 							</FormControl>
 							<FormMessage className="text-xs sm:text-sm" />
+							<ValidationError
+								prefix="Message"
+								field="message"
+								errors={formspreeState.errors}
+							/>
 						</FormItem>
 					)}
 				/>
@@ -262,9 +286,9 @@ function ContactForm() {
 					<Button
 						type="submit"
 						className="w-full md:w-auto px-4 sm:px-8 py-2.5 sm:py-6 bg-primary hover:bg-primary/90 text-white text-sm sm:text-base font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
-						disabled={isSubmitting}
+						disabled={formspreeState.submitting}
 					>
-						{isSubmitting ? (
+						{formspreeState.submitting ? (
 							<>
 								<Loader2 className="mr-2 h-3 w-3 sm:h-4 sm:w-4 animate-spin" />
 								Sending...

@@ -13,6 +13,8 @@ import { cn } from '@/lib/utils';
 import { useForm, ValidationError } from '@formspree/react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Loader2 } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import React from 'react';
 import { useForm as useReactHookForm } from 'react-hook-form';
 import { z } from 'zod';
 import { Button } from '../ui/button';
@@ -66,6 +68,7 @@ type FormValues = z.infer<typeof formSchema>;
 function ContactForm() {
 	// Formspree 表单初始化 - 替换为您的表单ID
 	const [formspreeState, handleFormspreeSubmit] = useForm('xbldaqak');
+	const router = useRouter();
 
 	// React Hook Form 用于表单验证
 	const form = useReactHookForm<FormValues>({
@@ -80,20 +83,12 @@ function ContactForm() {
 		},
 	});
 
-	// 如果表单提交成功，显示成功消息
-	if (formspreeState.succeeded) {
-		return (
-			<div className="bg-green-50 border border-green-200 rounded-lg p-4 sm:p-6 text-center">
-				<div className="text-green-600 text-lg sm:text-xl font-semibold mb-2">
-					Thank you for contacting us!
-				</div>
-				<p className="text-green-700 text-sm sm:text-base">
-					We&apos;ve received your message and will get back to you as soon as
-					possible.
-				</p>
-			</div>
-		);
-	}
+	// 如果表单提交成功，重定向到感谢页面
+	React.useEffect(() => {
+		if (formspreeState.succeeded) {
+			router.push('/thank-you');
+		}
+	}, [formspreeState.succeeded, router]);
 
 	// 结合 React Hook Form 和 Formspree
 	const onSubmit = async (data: FormValues) => {

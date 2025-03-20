@@ -7,6 +7,7 @@ export default function robots(): MetadataRoute.Robots {
 			allow: '/',
 			disallow: ['/admin/', '/private/'],
 		},
-		sitemap: 'https://www.ceciliahome.design/sitemap.xml',
+		sitemap: 'https://www.cecilia123.com/sitemap.xml',
+		host: 'https://www.cecilia123.com',
 	};
 }
